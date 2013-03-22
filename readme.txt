@@ -1,12 +1,12 @@
 === WooCommerce DYMO Print ===
 Contributors: bpluijms
+Plugin URI: http://www.geev.nl/wordpress-plugins/dymo-printer-voor-woocommerce/
+Author URI: http://www.geev.nl
 Tags: woocommerce, dymo
 Requires at least: 3.3
 Tested up to: 3.5
 Stable tag: 1.0.5
 License: GPLv2
-Plugin URI: http://www.geev.nl/wordpress-plugins/dymo-printer-voor-woocommerce/
-Author URI: http://www.geev.nl
 
 This plugin adds the possibility to print billing and shipping addresses on your DYMO label printer.
 == Description ==
