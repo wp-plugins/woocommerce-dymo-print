@@ -17,11 +17,13 @@ Now you are able to print shipping address labels in a second!
 
 For more information, check out [our website](http://www.geev.nl/wordpress-plugins/dymo-printer-voor-woocommerce/).
 
-=Free version=
+**Free version**
+
 This free version may be used as is. If you want more options and support you can buy WooCommerce DYMO Print Pro for only &euro; 15,00.
 The plugin adds a new side panel on the order page to allow shop managers to print out DYMO labels on the fly. This is useful for a lot of shops and makes live a lot easier ;-) .
 
-=Features=
+**Features**
+
 * Print DYMO shipping labels in a second
 * Localisation: English & Dutch
 
@@ -37,6 +39,7 @@ Please backup first.
 Go to WooCommerce > DYMO print, configure and start printing. Simple!
 
 == Screenshots ==
+
 1. WooCommerce DYMO Print settings
 2. WooCommerce DYMO Print adds a button to the order overview page
 3. WooCommerce DYMO Print adds a button to the order detail page
