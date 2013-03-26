@@ -46,6 +46,10 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 
 == Changelog ==
 ***WooCommerce DYMO Print***
+= 2013.03.26 - version 1.0.6 =
+* Small bugfixes
+* Fix: Update check
+
 = 2013.03.19 - version 1.0.5 =
 * Added DYMO Framework check on settingspage
 * Stable release
