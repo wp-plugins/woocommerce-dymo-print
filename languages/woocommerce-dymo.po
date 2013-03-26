@@ -1,0 +1,430 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Dymo\n"
+"POT-Creation-Date: 2013-03-26 15:18+0100\n"
+"PO-Revision-Date: 2013-03-26 15:24+0100\n"
+"Last-Translator: Bart Pluijms <info@geev.nl>\n"
+"Language-Team: Geev vormgeeving <info@geev.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: woocommerce-dymo.bak.php:68 inc/dymo-funct.php:57
+msgid "DYMO Print"
+msgstr "DYMO Print"
+
+#: woocommerce-dymo.bak.php:92 admin/dymo-settings.php:56
+msgid "You do not have sufficient permissions to access this page."
+msgstr "U heeft onvoldoende rechten om deze pagina te bekijken."
+
+#: woocommerce-dymo.bak.php:123 admin/dymo-settings.php:113
+msgid "WooCommerce - Print DYMO billing & shipping labels"
+msgstr "WooCommerce - Print DYMO factuur & verzendadres labels"
+
+#: woocommerce-dymo.bak.php:124 admin/dymo-settings.php:115
+msgid "Your settings have been saved."
+msgstr "Instellingen zijn opgeslagen."
+
+#: woocommerce-dymo.bak.php:125
+msgid "Change settings for DYMO billing & shipping labels."
+msgstr "Wijzig instellingen voor DYMO factuur & verzendadres labels."
+
+#: woocommerce-dymo.bak.php:132 admin/dymo-settings.php:124
+#: admin/dymo-settings.php:214
+msgid "Label markup"
+msgstr "Label opmaak"
+
+#: woocommerce-dymo.bak.php:137 admin/dymo-settings.php:244
+msgid "Your Label XML:"
+msgstr "Label XML"
+
+#: woocommerce-dymo.bak.php:141 admin/dymo-settings.php:248
+msgid ""
+"Copy Paste your complete label XML output <u>without</u> the first line:"
+msgstr "Knip en plak de complete label XML <u>zonder</u> de eerste regel:"
+
+#: woocommerce-dymo.bak.php:146 woocommerce-dymo.bak.php:202
+#: woocommerce-dymo.bak.php:251 admin/dymo-settings.php:207
+#: admin/dymo-settings.php:253 admin/dymo-settings.php:302
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+#: woocommerce-dymo.bak.php:153 admin/dymo-settings.php:130
+msgid "General Settings"
+msgstr "Algemene instellingen"
+
+#: woocommerce-dymo.bak.php:158 admin/dymo-settings.php:135
+msgid "Company name:"
+msgstr "Bedrijfsnaam:"
+
+#: woocommerce-dymo.bak.php:163 admin/dymo-settings.php:140
+msgid "Your custom company name for the labels."
+msgstr "Bedrijfsnaam voor op de labels."
+
+#: woocommerce-dymo.bak.php:164 woocommerce-dymo.bak.php:180
+#: woocommerce-dymo.bak.php:194 admin/dymo-settings.php:141
+#: admin/dymo-settings.php:157 admin/dymo-settings.php:171
+msgid "Note:"
+msgstr "Let op:"
+
+#: woocommerce-dymo.bak.php:165
+msgid "Leave blank to not to print a company name."
+msgstr "Laat leeg om geen bedrijfsnaam te printen."
+
+#: woocommerce-dymo.bak.php:166 woocommerce-dymo.bak.php:182
+#: woocommerce-dymo.bak.php:196 admin/dymo-settings.php:143
+#: admin/dymo-settings.php:159 admin/dymo-settings.php:173
+#: admin/dymo-settings.php:187 admin/dymo-settings.php:201
+#, php-format
+msgid "Use %s as your DYMO label object-name"
+msgstr "Gebruik %s als DYMO label object-naam"
+
+#: woocommerce-dymo.bak.php:172 admin/dymo-settings.php:149
+msgid "Custom logo:"
+msgstr "Logo:"
+
+#: woocommerce-dymo.bak.php:176 admin/dymo-settings.php:153
+msgid "Upload Image"
+msgstr "Upload afbeelding"
+
+#: woocommerce-dymo.bak.php:179 admin/dymo-settings.php:156
+msgid "Your custom logo for the labels."
+msgstr "Logo voor op de labels."
+
+#: woocommerce-dymo.bak.php:181
+msgid "Leave blank to not to use a custom logo."
+msgstr "Laat leeg om geen logo op de labels te printen."
+
+#: woocommerce-dymo.bak.php:188
+msgid "Company extra info:"
+msgstr "Extra bedrijfsinformatie:"
+
+#: woocommerce-dymo.bak.php:193
+msgid "Some extra info that is displayed on your label."
+msgstr "Extra informatie dat geprint kan worden op labels."
+
+#: woocommerce-dymo.bak.php:195
+msgid "Leave blank to not to print the info."
+msgstr "Laat leeg om geen extra info te printen."
+
+#: woocommerce-dymo.bak.php:209 admin/dymo-settings.php:260
+msgid "Advanced Settings"
+msgstr "Geavanceerde instellingen"
+
+#: woocommerce-dymo.bak.php:214 admin/dymo-settings.php:265
+msgid "DYMO Twin Turbo settings"
+msgstr "DYMO Twin Turbo instellingen"
+
+#: woocommerce-dymo.bak.php:219 admin/dymo-settings.php:270
+msgid "DYMO Twin Turbo roll:"
+msgstr "DYMO Twin Turbo rol:"
+
+#: woocommerce-dymo.bak.php:224 woocommerce-dymo.bak.php:231
+#: woocommerce-dymo.bak.php:238 admin/dymo-settings.php:275
+#: admin/dymo-settings.php:282 admin/dymo-settings.php:289
+msgid "Auto"
+msgstr "Auto"
+
+#: woocommerce-dymo.bak.php:226 woocommerce-dymo.bak.php:233
+#: woocommerce-dymo.bak.php:240 admin/dymo-settings.php:277
+#: admin/dymo-settings.php:284 admin/dymo-settings.php:291
+msgid "Left"
+msgstr "Links"
+
+#: woocommerce-dymo.bak.php:228 woocommerce-dymo.bak.php:235
+#: woocommerce-dymo.bak.php:242 admin/dymo-settings.php:279
+#: admin/dymo-settings.php:286 admin/dymo-settings.php:293
+msgid "Right"
+msgstr "Rechts"
+
+#: woocommerce-dymo.bak.php:245 admin/dymo-settings.php:296
+msgid ""
+"When using a DYMO Labelwriter 450 Twin Turbo, please specify default roll"
+msgstr ""
+"Wanneer je gebruik maakt van een DYMO Labelwriter 450 Twin Turbo, kies dan "
+"aub de standaard rol"
+
+#: woocommerce-dymo.bak.php:258 admin/dymo-settings.php:309
+msgid "Let's get pro!"
+msgstr "Let's get pro!"
+
+#: woocommerce-dymo.bak.php:260 admin/dymo-settings.php:311
+msgid ""
+"You can buy an license key from our website. When using WooCommerce DYMO "
+"Print Pro you are able to use more features. Check our website for more "
+"information."
+msgstr ""
+"Je kan een licentiecode kopen via onze website. Wanneer je gebruik maakt van "
+"WooCommerce DYMO Print Pro krijg je veel meer functionaliteiten. Bekijk onze "
+"website voor meer informatie."
+
+#: woocommerce-dymo.bak.php:264 admin/dymo-settings.php:315
+msgid "License Key"
+msgstr "Licentiecode"
+
+#: woocommerce-dymo.bak.php:269 admin/dymo-settings.php:323
+msgid ""
+"Copy Paste your license key to activate WooCommerce DYMO Print Pro. After "
+"activation you are able to download the PRO version."
+msgstr ""
+"Knip en plak je licentiecode om WooCommerce DYMO Print Pro te activeren. Na "
+"activatie kan je de PRO versie automatisch downloaden."
+
+#: woocommerce-dymo.bak.php:275 admin/dymo-settings.php:331
+msgid "Save License Key"
+msgstr "Licentiecode opslaan"
+
+#: woocommerce-dymo.bak.php:287 admin/dymo-settings.php:343
+msgid "DYMO feature check"
+msgstr "DYMO javascript controle"
+
+#: woocommerce-dymo.bak.php:290 admin/dymo-settings.php:346
+msgid "If you have any problems, please check below data."
+msgstr ""
+"Wanneer er problemen zijn bij het printen van etiketten, controleer dan "
+"eerst onderstaande gegevens."
+
+#: woocommerce-dymo.bak.php:293 admin/dymo-settings.php:349
+msgid "Refresh"
+msgstr "Vernieuwen"
+
+#: woocommerce-dymo.bak.php:294 admin/dymo-settings.php:350
+msgid "Print printers information on"
+msgstr "Print printer informatie via"
+
+#: woocommerce-dymo.bak.php:303 admin/dymo-settings.php:360
+msgid "Need Support?"
+msgstr "Hulp nodig?"
+
+#: woocommerce-dymo.bak.php:305
+msgid ""
+"If you are having problems with this plugin, please contact us via our "
+"website"
+msgstr ""
+"Heb je problemen met deze plugin? Neem dan contact met ons op via onze "
+"website"
+
+#: woocommerce-dymo.bak.php:306 admin/dymo-settings.php:363
+msgid "We will try to support you as soon as possible, mostly within 24 hours."
+msgstr ""
+"We doen onze best om je zo snel mogelijk te helpen met je vragen, meestal "
+"binnen 24 uur."
+
+#: woocommerce-dymo.bak.php:307 admin/dymo-settings.php:364
+msgid ""
+"On our website you will also find some basic support information for this "
+"plugin."
+msgstr "Op onze website vind je ook basis help informatie voor deze plugin."
+
+#: woocommerce-dymo.bak.php:311 admin/dymo-settings.php:368
+msgid "Show Your Love"
+msgstr "Show Your Love"
+
+#: woocommerce-dymo.bak.php:313 admin/dymo-settings.php:370
+#, php-format
+msgid ""
+"This plugin is developed by %s, a Dutch graphic design and webdevelopment "
+"company."
+msgstr ""
+"Deze plugin is ontwikkeld door %s, een Nederlands grafisch ontwerp bureau."
+
+#: woocommerce-dymo.bak.php:314 admin/dymo-settings.php:371
+msgid ""
+"If you are happy with this plugin please show your love by liking us on "
+"Facebook"
+msgstr "Blij met deze plugin? Like ons op Facebook!"
+
+#: woocommerce-dymo.bak.php:316 admin/dymo-settings.php:373
+msgid "Or"
+msgstr "Of"
+
+#: woocommerce-dymo.bak.php:318 admin/dymo-settings.php:375
+msgid "Rate the plugin 5&#9733; on WordPress.org"
+msgstr "Waardeer deze plugin met 5&#9733; op WordPress.org"
+
+#: woocommerce-dymo.bak.php:319 admin/dymo-settings.php:376
+msgid "Blog about it & link to the plugin page"
+msgstr "Schrijf een blog en link naar de plugin pagina"
+
+#: woocommerce-dymo.bak.php:331 woocommerce-dymo.bak.php:438
+#: inc/dymo-funct.php:78 inc/dymo-funct.php:185
+msgid "Print DYMO labels"
+msgstr "Print DYMO labels"
+
+#: woocommerce-dymo.bak.php:339 woocommerce-dymo.bak.php:355
+#: inc/dymo-funct.php:103
+msgid "Print Billing Label"
+msgstr "Factuur label"
+
+#: woocommerce-dymo.bak.php:340 woocommerce-dymo.bak.php:356
+#: inc/dymo-funct.php:102
+msgid "Print Shipping Label"
+msgstr "Verzend label"
+
+#: woocommerce-dymo.bak.php:447 inc/dymo-funct.php:86 inc/dymo-funct.php:191
+msgid "Billing Label"
+msgstr "Factuur label"
+
+#: woocommerce-dymo.bak.php:447 inc/dymo-funct.php:87 inc/dymo-funct.php:191
+msgid "Shipping Label"
+msgstr "Verzend label"
+
+#: woocommerce-dymo.bak.php:448 inc/dymo-funct.php:192
+#, php-format
+msgid "Print DYMO %s"
+msgstr "Print DYMO %s"
+
+#: woocommerce-dymo.bak.php:455 inc/dymo-funct.php:199
+msgid "Printing label for order:"
+msgstr "Label voor bestelling:"
+
+#: admin/dymo-settings.php:123
+msgid "General"
+msgstr "Algemeen"
+
+#: admin/dymo-settings.php:125
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: admin/dymo-settings.php:126
+msgid "Debug"
+msgstr "Debug"
+
+#: admin/dymo-settings.php:127
+msgid "License key"
+msgstr "Licentiecode"
+
+#: admin/dymo-settings.php:142
+#, fuzzy
+msgid "Leave blank to not print a company name."
+msgstr "Laat leeg om geen bedrijfsnaam te printen."
+
+#: admin/dymo-settings.php:158
+#, fuzzy
+msgid "Leave blank to not print a custom logo."
+msgstr "Laat leeg om geen logo op de labels te printen."
+
+#: admin/dymo-settings.php:165
+msgid "Extra info:"
+msgstr "Extra info:"
+
+#: admin/dymo-settings.php:170
+msgid ""
+"Some extra info that is displayed on your label, for example a retour zip-"
+"code."
+msgstr "Extra informatie dat geprint kan worden op je labels."
+
+#: admin/dymo-settings.php:172
+#, fuzzy
+msgid "Leave blank to not print the info."
+msgstr "Laat leeg om geen extra info te printen."
+
+#: admin/dymo-settings.php:179
+msgid "Print E-mail address:"
+msgstr "Print e-mail adres:"
+
+#: admin/dymo-settings.php:186
+msgid "Print customer e-mail address on labels"
+msgstr "Print e-mail adres van de klant op labels"
+
+#: admin/dymo-settings.php:193
+msgid "Print telephone number:"
+msgstr "Print telefoon nummer:"
+
+#: admin/dymo-settings.php:200
+msgid "Print customer telephone number on labels"
+msgstr "Print het telefoonnummer van de klant op labels"
+
+#: admin/dymo-settings.php:218
+msgid "Objects:"
+msgstr "Objecten"
+
+#: admin/dymo-settings.php:219
+msgid "Use the DYMO Labelwriter software to make your own labels."
+msgstr "Gebruik de DYMO Labelwriter software om je eigen labels te maken."
+
+#: admin/dymo-settings.php:220
+msgid ""
+"On the basis of the general settings, your label requires the following "
+"label objects:"
+msgstr ""
+"Op de basis van de algemene instellingen moet het label de volgende "
+"verplichte objecten bevatten:"
+
+#: admin/dymo-settings.php:230
+msgid ""
+"If your label doesn't provide above fields, your labels won't be printed."
+msgstr ""
+"Wanneer het label de bovenstaande objecten niet bevat, wordt het label niet "
+"geprint."
+
+#: admin/dymo-settings.php:235
+msgid "Import DYMO label file:"
+msgstr "Importeer DYMO Label bestand"
+
+#: admin/dymo-settings.php:239
+msgid ""
+"Import your DYMO Label file, which you have made with the DYMO Labelwriter "
+"software."
+msgstr ""
+"Importeer het DYMO label bestand dat je hebt gemaakt met de DYMO Labelwriter "
+"software."
+
+#: admin/dymo-settings.php:248
+msgid "You can also use the import function above."
+msgstr "Je kan ook bovenstaande import functie gebruiken."
+
+#: admin/dymo-settings.php:362
+msgid "If you are having problems with this plugin, please contact us via our "
+msgstr "Heb je problemen met deze plugin? Neem dan contact met ons op via onze"
+
+#: inc/dymo-funct.php:26
+msgid ""
+"WooCommerce is not active. Please activate plugin before using WooCommerce "
+"DYMO Print plugin."
+msgstr ""
+"WooCommerce is niet actief. Activeer WooCommerce voordat je de WooCommerce "
+"DYMO Print plugin kunt gebruiken."
+
+#~ msgid ""
+#~ "An Unexpected HTTP Error occurred during the API request.</p> <p><a href="
+#~ "\"?\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+#~ msgstr ""
+#~ "Een onbekende HTTP fout is opgetreden tijdens de API aanvraag. </p><p><a "
+#~ "href=\"?\" onclick=\"document.location.reload(); return false;\">Probeer "
+#~ "opnieuw</a>"
+
+#~ msgid "An unknown error occurred"
+#~ msgstr "Een onbekende fout is opgetreden."
+
+#~ msgid "Buy Pro!"
+#~ msgstr "Koop Pro!"
+
+#~ msgid "Check out our "
+#~ msgstr "Bekijk onze"
+
+#~ msgid "to find out more about WooCommerce DYMO Print Pro."
+#~ msgstr "voor meer informatie over WooCommerce DYMO Print Pro."
+
+#~ msgid ""
+#~ "For only &euro; 15,00 you will get a lot of features and access to our "
+#~ "support section."
+#~ msgstr ""
+#~ "Voor &euro; 15,00 krijg je veel meer functionaliteiten en toegang tot "
+#~ "onze support sectie."
+
+#~ msgid "A couple of features:"
+#~ msgstr "Een aantal functionaliteiten:"
+
+#~ msgid "Print DYMO billing & shipping labels"
+#~ msgstr "Print factuur & verzendadres labels"
+
+#~ msgid "Choose your label size"
+#~ msgstr "Kies je labels"
+
+#~ msgid "Print your company logo on your labels"
+#~ msgstr "Uw eigen logo voor op de labels."
