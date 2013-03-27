@@ -68,6 +68,9 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 = Does this plugin support a DYMO labelwriter connected to an Apple? = 
 We really can't give an answer about that. Some people say it does, some other say it doesn't. We really can't figure out where the problems are, so just try it out yourself. It's free!
 
+= Is it possible to print a barcode on my labels? =
+With our PRO version it is possible to design your own labels. Just select a barcode object and make sure it has the required OBJECT-name.
+
 = What is the difference between the Free and Pro versions of this plugin? = 
 You may use the free version as it is. When you buy WooCommerce DYMO Print PRO you get a lot more options: print billing & shipping labels, customize your own labels, choose your label size, print your company logo on your labels, use a DYMO Labelwriter 450 Twin Turbo.
 For a full list of features, please check out [our website](http://www.geev.nl/wordpress-plugins/woocommerce-dymo-print/).
