@@ -177,7 +177,7 @@ Land</String>
     									<span class="description"><?php
     										echo __( 'Your custom company name for the labels.', 'woocommerce-dymo' );
     										echo '<br /><strong>' . __( 'Note:', 'woocommerce-dymo' ) . '</strong> ';
-    										echo __( 'Leave blank to not to print a company name.', 'woocommerce-dymo' );
+    										_e( 'Leave blank to not to print a company name.', 'woocommerce-dymo' );
     									?></span>
     								</td>
     							</tr>
@@ -190,7 +190,7 @@ Land</String>
     									<span class="description"><?php
     										echo __( 'Some extra info that is displayed on your label.', 'woocommerce-dymo' );
     										echo '<br /><strong>' . __( 'Note:', 'woocommerce-dymo' ) . '</strong> ';
-    										echo __( 'Leave blank to not to print the info.', 'woocommerce-dymo' );
+    										_e( 'Leave blank to not to print the info.', 'woocommerce-dymo' );
     									?></span>
     								</td>
     							</tr>
@@ -216,7 +216,7 @@ Land</String>
 										<?php if ($update->getRemote_license()=='true') { echo '<img src="'.plugins_url( 'woocommerce-dymo-print/img/icon-check.png' ).'" width="24" height="24" alt="" style="width:24px;height:24px;position:absolute;margin:0 10px">';} ?>
 										<br />
     									<span class="description"><?php
-    										echo __( 'Copy Paste your license key to activate WooCommerce DYMO Print Pro. After activation you are able to download the PRO version.');
+    										echo __( 'Copy Paste your license key to activate WooCommerce DYMO Print Pro. After activation you are able to download the PRO version.','woocommerce-dymo');
     									?></span>
 										<input type="hidden" name="woocommerce_geev_url" class="regular-text" value="<?php echo GetDomain($_SERVER['HTTP_HOST']); ?>" />
     								</td>
