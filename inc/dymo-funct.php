@@ -59,8 +59,7 @@ function woocommerce_dymo_alter_order_actions($column) {
 	$order = new WC_Order( $post->ID );
     switch ($column) {
 		case "order_actions" :
-		?>
-		<a class="button dymo-link tips" data-tip="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" href="<?php echo wp_nonce_url(admin_url('?print_dymo=true&post='.$post->ID.'&type=print_shipping_label'), 'print-dymo'); ?>"><img src="<?php echo plugins_url( 'img/icon-print-shipping.png' , dirname(__FILE__) ); ?>" alt="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" width="14"></a>
+		?><p style="display:block;clear:both;"><a class="button dymo-link tips" data-tip="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" href="<?php echo wp_nonce_url(admin_url('?print_dymo=true&post='.$post->ID.'&type=print_shipping_label'), 'print-dymo'); ?>"><img src="<?php echo plugins_url( 'img/icon-print-shipping.png' , dirname(__FILE__) ); ?>" alt="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" width="14"></a></p>
 		<?php
 		break;
     }

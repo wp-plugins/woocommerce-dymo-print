@@ -218,7 +218,7 @@ Land</String>
     									<span class="description"><?php
     										echo __( 'Copy Paste your license key to activate WooCommerce DYMO Print Pro. After activation you are able to download the PRO version.');
     									?></span>
-										<input type="hidden" name="woocommerce_geev_url" class="regular-text" value="<?php echo md5(GetDomain($_SERVER['HTTP_HOST'])); ?>" />
+										<input type="hidden" name="woocommerce_geev_url" class="regular-text" value="<?php echo GetDomain($_SERVER['HTTP_HOST']); ?>" />
     								</td>
     							</tr>
 								<tr>
