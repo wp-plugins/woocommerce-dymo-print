@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce DYMO Print
 Plugin URI: http://www.geev.nl/wordpress-plugins/woocommerce-dymo-print/
 Description: This plugin provides shipping labels for your DYMO label printer from the backend. - Free version
-Version: 1.0.7
+Version: 1.0.8
 Author: Bart Pluijms
 Author URI: http://www.geev.nl/
 */
@@ -28,7 +28,7 @@ add_action('init', 'geev_update_check');
 function geev_update_check()
 {
     require_once ('inc/wp_autoupdate.php');
-    $geev_plugin_current_version = '1.0.7';
+    $geev_plugin_current_version = '1.0.8';
     $geev_plugin_slug = plugin_basename(__FILE__);
 	global $update;
 	$update=new wp_auto_update ($geev_plugin_current_version, 'http://www.siteevaluator.nl/update/'.$geev_plugin_slug, $geev_plugin_slug,get_option( 'woocommerce_geev_dymo_license_key' ),get_option( 'woocommerce_geev_url'));
