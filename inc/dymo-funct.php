@@ -43,10 +43,15 @@ function woocommerce_dymo_add_box() {
 }
 function woocommerce_dymo_create_box_content() {
 	global $post_id;
+	
 ?>
 	<table class="form-table dymo-box">
 		<tr>
+			<?php if (( get_option( 'woocommerce_ship_to_billing_address_only' ) == 'no' && get_option('woocommerce_require_shipping_address')=='yes' )||  get_option('woocommerce_calc_shipping')=='yes' ) { ?>
 			<td><a class="button dymo-link" href="<?php echo wp_nonce_url(admin_url('?print_dymo=true&post='.$post_id.'&type=print_shipping_label'), 'print-dymo'); ?>"><?php _e('Print Shipping Label', 'woocommerce-dymo'); ?></a></td>
+			<?php } else { ?>
+			<td><?php _e( 'Shipping is not active. You can\'t print shipping labels if you don\'t use shipping in WooCommerce.', 'woocommerce-dymo' ); ?></td>
+			<?php } ?>
 		</tr>
 	</table>
 <?php }
@@ -59,8 +64,9 @@ function woocommerce_dymo_alter_order_actions($column) {
 	$order = new WC_Order( $post->ID );
     switch ($column) {
 		case "order_actions" :
-		?><p style="display:block;clear:both;"><a class="button dymo-link tips" data-tip="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" href="<?php echo wp_nonce_url(admin_url('?print_dymo=true&post='.$post->ID.'&type=print_shipping_label'), 'print-dymo'); ?>"><img src="<?php echo plugins_url( 'img/icon-print-shipping.png' , dirname(__FILE__) ); ?>" alt="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" width="14"></a></p>
-		<?php
+		if (( get_option( 'woocommerce_ship_to_billing_address_only' ) == 'no' && get_option('woocommerce_require_shipping_address')=='yes' )||  get_option('woocommerce_calc_shipping')=='yes' ) {
+		?><p style="display:block;clear:both;height:14px;"><a class="button dymo-link tips" data-tip="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" href="<?php echo wp_nonce_url(admin_url('?print_dymo=true&post='.$post->ID.'&type=print_shipping_label'), 'print-dymo'); ?>"><img src="<?php echo plugins_url( 'img/icon-print-shipping.png' , dirname(__FILE__) ); ?>" alt="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" width="14"></a></p>
+		<?php }
 		break;
     }
 }

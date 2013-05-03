@@ -39,7 +39,11 @@ global $update;
 	<h2><?php _e( 'WooCommerce - Print DYMO shipping labels', 'woocommerce-dymo' ); ?></h2>
 	<?php if ( isset( $_POST['dymo_fields_submitted'] ) && $_POST['dymo_fields_submitted'] == 'submitted' ) { ?>
 	<div id="message" class="updated fade"><p><strong><?php _e( 'Your settings have been saved.', 'woocommerce-dymo' ); ?></strong></p></div>
-	<?php } ?>
+	<?php } 
+	if (( get_option( 'woocommerce_ship_to_billing_address_only' ) == 'yes' && get_option('woocommerce_require_shipping_address')=='no' )||  get_option('woocommerce_calc_shipping')=='no' ) {?>
+	<div id="message" class="error fade"><p><strong><?php _e( 'Shipping is not active. You can\'t print shipping labels if you don\'t use shipping in WooCommerce.', 'woocommerce-dymo' ); ?></strong></p></div>
+	<?php }	?>
+	
 	<div id="content">
 		<form method="post" action="" id="dymo_settings">
 			<input type="hidden" name="dymo_fields_submitted" value="submitted">
