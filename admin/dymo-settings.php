@@ -257,7 +257,7 @@ Land</String>
 					<div class="postbox">
 						<h3><?php _e( 'Buy Pro!', 'woocommerce-dymo' ); ?></h3>
 						<div class="inside dymo-preview">
-							<p><?php echo __( 'Check out our ', 'woocommerce-dymo' ); ?> <a href="http://www.geev.nl/wordpress-plugins/woocommerce-dymo-print/">website</a> <?php _e('to find out more about WooCommerce DYMO Print Pro.', 'woocommerce-dymo' );?></p>
+							<p><?php echo __( 'Check out our ', 'woocommerce-dymo' ); ?> <a href="http://wordpress.geev.nl/product/woocommerce-dymo-print/">website</a> <?php _e('to find out more about WooCommerce DYMO Print Pro.', 'woocommerce-dymo' );?></p>
 							<p><?php _e('For only &euro; 15,00 you will get a lot of features and access to our support section.', 'woocommerce-dymo' );?></p>
 							<p><?php _e('A couple of features:', 'woocommerce-dymo' );?>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;"><li><?php _e('Print DYMO billing & shipping labels', 'woocommerce-dymo' );?></li><li><?php _e('Customize your own labels', 'woocommerce-dymo' );?></li><li><?php _e('Choose your label size', 'woocommerce-dymo' );?></li><li><?php _e('Print your company logo on your labels', 'woocommerce-dymo' );?></li><li><?php _e('Use a DYMO Labelwriter 450 Twin Turbo', 'woocommerce-dymo' );?></li></ul>
@@ -272,7 +272,7 @@ Land</String>
 							<p><?php _e( 'Or', 'woocommerce-dymo' ); ?></p>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;">
 								<li><a href="http://wordpress.org/extend/plugins/woocommerce-dymo-print/" target=_blank title="Woocommerce DYMO print"><?php _e( 'Rate the plugin 5&#9733; on WordPress.org', 'woocommerce-dymo' ); ?></a></li>
-								<li><a href="http://www.geev.nl/wordpress-plugins/woocommerce-dymo-print/" target=_blank title="Woocommerce DYMO print"><?php _e( 'Blog about it & link to the plugin page', 'woocommerce-dymo' ); ?></a></li>
+								<li><a href="http://wordpress.geev.nl/product/woocommerce-dymo-print/" target=_blank title="Woocommerce DYMO print"><?php _e( 'Blog about it & link to the plugin page', 'woocommerce-dymo' ); ?></a></li>
 							</ul>
 						</div>
 					</div>
