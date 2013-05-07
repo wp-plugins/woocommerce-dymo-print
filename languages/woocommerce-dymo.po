@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Dymo\n"
-"POT-Creation-Date: 2013-05-03 15:22+0100\n"
-"PO-Revision-Date: 2013-05-03 15:23+0100\n"
+"POT-Creation-Date: 2013-05-07 14:18+0100\n"
+"PO-Revision-Date: 2013-05-07 14:18+0100\n"
 "Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: Geev vormgeeving <info@geev.nl>\n"
 "MIME-Version: 1.0\n"
@@ -173,6 +173,10 @@ msgstr "Uw eigen logo voor op de labels."
 #: admin/dymo-settings.php:263
 msgid "Use a DYMO Labelwriter 450 Twin Turbo"
 msgstr "Maak gebruik van een DYMO Labelwriter 450 Twin Turbo"
+
+#: admin/dymo-settings.php:263
+msgid "New: Bulk printing"
+msgstr "Nieuw: Print labels voor meerdere orders in 1 keer"
 
 #: admin/dymo-settings.php:267
 msgid "Show Your Love"
