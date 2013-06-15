@@ -104,6 +104,15 @@ function woocommerce_dymo_order_items_table( $order, $show_price = FALSE ) {
 }
 
 /**
+* Convert address to javascript string
+* @since 1.1.1
+*/
+function woo_dymo_convert_address($adres) {
+	$adres= preg_replace('/<br(\s+)?\/?>/i', "", preg_replace("/[\n\r]/","|",$adres));
+	return str_replace("'", "\'", htmlspecialchars_decode($adres,ENT_QUOTES)); 
+}
+
+/**
 * Output preview if needed
 */
 function woocommerce_dymo_twin_roll() {
@@ -148,8 +157,11 @@ function woocommerce_dymo_window() {
 	<script charset="UTF-8" type="text/javascript" src="<?php echo plugins_url( '/js/woocommerce-dymo-print.js', dirname(__FILE__));?>"> </script>
 </head>
 <body>
+<div id=error class=error><?php _e('Something went wrong while printing your label.', 'woocommerce-dymo');?> <?php _e('Please make sure your label contains the required object fields.', 'woocommerce-dymo');?> <?php echo sprintf(__('For more information about how to create your labels, see %s.', 'woocommerce-dymo'),'<a href="http://wordpress.geev.nl/support/documentation/" target=_blank">'.__('our documentation','woocommerce-dymo').'</a>');?></div>
 <script type="text/javascript">template = '<? echo '<?xml version="1.0" encoding="utf-8"?>'; ?>' + '<?php echo preg_replace('/\s\s+/', '\' + \'', woocommerce_dymo_print_label()); ?>';</script>
 	<?php if ($action == 'print_billing_label') { $actie=__('Billing Label', 'woocommerce-dymo'); } else { $actie=__('Shipping Label', 'woocommerce-dymo'); } echo '<h1>'.sprintf( __('Print DYMO %s' , 'woocommerce-dymo') , $actie ).'</h1>'; 
+	
+	
 	$content = ob_get_clean();
 	$i=0;
 	foreach ($orders as $order_id) {
@@ -186,17 +198,19 @@ function woocommerce_dymo_window() {
     }
 		
 		<?php if ($action == 'print_billing_label') { 
-			if($order->get_formatted_billing_address()!="") { $adres = $order->get_formatted_billing_address();  $adres=htmlspecialchars(preg_replace('/<br(\s+)?\/?>/i', "", $adres), ENT_QUOTES); $adres = preg_replace("/[\n\r]/","|",$adres); }
+			if($order->get_formatted_billing_address()!="") { $adres = woo_dymo_convert_address($order->get_formatted_billing_address()); }
 		} else { 
-  		    if($order->get_formatted_shipping_address()!="") { $adres = $order->get_formatted_shipping_address();  $adres=htmlspecialchars(preg_replace('/<br(\s+)?\/?>/i', "", $adres), ENT_QUOTES); $adres = preg_replace("/[\n\r]/","|",$adres); }
-		} ?>
-		var adres_in='<?php echo $adres;?>';
+			if($order->get_formatted_shipping_address()!="") { $adres = woo_dymo_convert_address($order->get_formatted_shipping_address()); }
+		}		
+		?>
+		var adres_in = '<?php echo $adres;?>';
 		var adres= adres_in.replace(/\|/g, "\n");
 		<?php if(woocommerce_dymo_print_company_name()!="") { ?> label.setObjectText("COMPANY", "<?php echo woocommerce_dymo_print_company_name(); ?>"); <?php } ?>
 		<?php if(woocommerce_dymo_print_company_extra()!="") { ?> label.setObjectText("EXTRA", "<?php echo woocommerce_dymo_print_company_extra(); ?>");<?php }?>
 		<?php if($adres!="") { ?>label.setObjectText("ORDER", adres);<?php } ?>
 		setTimeout(function() {label.print(printer.name, dymo.label.framework.createLabelWriterPrintParamsXml(printParams)); },2000);
 		}
+		document.getElementById('error').style.display = 'none';
 	</script>
 		  <?php
   		  $content .= ob_get_clean();
@@ -206,6 +220,7 @@ function woocommerce_dymo_window() {
 		 </body>
 </html><?php
   		echo $content;
+
   		exit;
     }
 }

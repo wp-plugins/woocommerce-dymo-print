@@ -185,15 +185,15 @@ msgstr "Nieuw:"
 
 #: ../admin/dymo-settings.php:263
 msgid "Print Product list"
-msgstr "Print productlijst"
+msgstr "Print product lijst"
 
 #: ../admin/dymo-settings.php:263
 msgid "Print Order number"
-msgstr "Print bestel nummer"
+msgstr "Print order nummer:"
 
 #: ../admin/dymo-settings.php:263
 msgid "Use a different label markup for shipping and invoice labels."
-msgstr "Gebruik een andere labellayout voro verzendlabels en factuurlabels."
+msgstr "Gebruik een andere label layout voor verzendlabels en factuurlabels."
 
 #: ../admin/dymo-settings.php:267
 msgid "Show Your Love"
@@ -243,7 +243,7 @@ msgstr "Er ging iets verkeerd bij het printen van de label(s)."
 
 #: ../inc/dymo-funct.php:160
 msgid "Please make sure your label contains the required object fields."
-msgstr "Zorg er a.u.b. voor dat het label alle verplichte objecten bevat."
+msgstr "Zorg er a.u.b. voor dat het label alle verplichte velden bevat."
 
 #: ../inc/dymo-funct.php:160
 #, php-format
