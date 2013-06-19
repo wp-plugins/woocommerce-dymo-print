@@ -5,7 +5,7 @@ Author URI: http://www.geev.nl
 Tags: woocommerce, dymo
 Requires at least: 3.3
 Tested up to: 3.5.
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2
 
 This plugin adds the possibility to print billing and shipping addresses on your DYMO label printer.
@@ -46,6 +46,9 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 
 == Changelog ==
 ***WooCommerce DYMO Print***
+= 2013.06.19 - version 1.1.2 =
+* Fixed: small bug which causes errors on some PHP installations.
+
 = 2013.06.15 - version 1.1.1 =
 * Added support for quotes in addresses (thanks to Evert-Jan for reporting this)
 * Added better error handling when label file contains wrong objects.
