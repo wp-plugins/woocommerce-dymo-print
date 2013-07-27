@@ -1,18 +1,6 @@
 <?php 
-function DymoDomain($url)
-{
-$nowww = ereg_replace('www\.','',$url);
-$domain = parse_url($nowww);
-if(!empty($domain["host"]))
-	{
-	preg_match("/[^\.\/]+\.[^\.\/]+$/", $domain["host"], $domains);
-	 return $domains[0];
-	 } else
-	 {
-	 preg_match("/[^\.\/]+\.[^\.\/]+$/", $domain["path"], $domains);
-	 return $domains[0];
-	 }
-} 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 /**
 * WordPress Settings Page
 */
@@ -31,7 +19,6 @@ function woocommerce_dymo_page() {
 			}
 		}
 	}
-global $update;
 ?>
 <style>table td p {padding:0px !important;} table.dymocheck{width:100%;border:1px solid #ccc !important;text-align:center;margin:0 0 20px 0}.dymocheck tr th{border-bottom:1px solid #ccc !important;background:#ccc;}</style>
 <div class="wrap">
@@ -201,33 +188,6 @@ Land</String>
 								<tr>
 									<td colspan=2>
 										<p class="submit"><input type="submit" name="Submit" class="button-primary" value="<?php esc_attr_e( 'Save Changes', 'woocommerce-dymo' ); ?>" /></p>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-					<div class="postbox">
-						<h3><?php _e( 'Let\'s get pro!', 'woocommerce-dymo' ); ?></h3>
-						<div class="inside dymo-pro">
-							<p><?php echo __( 'You can buy an license key from our website. When using WooCommerce DYMO Print Pro you are able to use more features. Check our website for more information.', 'woocommerce-dymo' );?></p>
-							<table class="form-table">
-								<tr>
-    								<th>
-    									<label for="woocommerce_geev_label"><b><?php _e( 'License Key', 'woocommerce-dymo' ); ?></b></label>
-    								</th>
-    								<td>
-    									<input type="text" name="woocommerce_geev_dymo_license_key" class="regular-text" value="<?php echo stripslashes(get_option( 'woocommerce_geev_dymo_license_key' )); ?>" />
-										<?php if ($update->getRemote_license()=='true') { echo '<img src="'.plugins_url( 'woocommerce-dymo-print/img/icon-check.png' ).'" width="24" height="24" alt="" style="width:24px;height:24px;position:absolute;margin:0 10px">';} ?>
-										<br />
-    									<span class="description"><?php
-    										echo __( 'Copy Paste your license key to activate WooCommerce DYMO Print Pro. After activation you are able to download the PRO version.','woocommerce-dymo');
-    									?></span>
-										<input type="hidden" name="woocommerce_geev_url" class="regular-text" value="<?php echo DymoDomain($_SERVER['HTTP_HOST']); ?>" />
-    								</td>
-    							</tr>
-								<tr>
-									<td colspan=2>
-										<p class="submit"><input type="submit" name="Submit" class="button-primary" value="<?php esc_attr_e( 'Save License Key', 'woocommerce-dymo' ); ?>" /></p>
 									</td>
 								</tr>
 							</table>
