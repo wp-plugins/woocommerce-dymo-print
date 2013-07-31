@@ -27,7 +27,9 @@ The plugin adds a new side panel on the order page to allow shop managers to pri
 * Print DYMO shipping labels in a second
 * Localisation: English & Dutch
 
-**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.6-RC1)**
+**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.6-RC1).**
+
+Rate us on (http://wordpress.org/plugins/woocommerce-dymo-print/) and receive 20% discount on our PRO version. Just contact us after you've placed your rating & review.
 
 == Installation ==
 
