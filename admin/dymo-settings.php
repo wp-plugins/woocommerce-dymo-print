@@ -28,7 +28,7 @@ function woocommerce_dymo_page() {
 	<div id="message" class="updated fade"><p><strong><?php _e( 'Your settings have been saved.', 'woocommerce-dymo' ); ?></strong></p></div>
 	<?php } 
 	if (( get_option( 'woocommerce_ship_to_billing_address_only' ) == 'yes' && get_option('woocommerce_require_shipping_address')=='no' )||  get_option('woocommerce_calc_shipping')=='no' ) {?>
-	<div id="message" class="error fade"><p><strong><?php _e( 'Shipping is not active. You can\'t print shipping labels if you don\'t use shipping in WooCommerce.', 'woocommerce-dymo' ); ?></strong></p></div>
+	<div id="message" class="error fade"><p><strong><?php _e( 'Shipping is not active. Billing address is used instead of shipping address.', 'woocommerce-dymo' ); ?></strong></p></div>
 	<?php }	?>
 	
 	<div id="content">
@@ -36,125 +36,6 @@ function woocommerce_dymo_page() {
 			<input type="hidden" name="dymo_fields_submitted" value="submitted">
 			<div id="poststuff">
 				<div style="float:left; width:74%; padding-right:1%;">
-					<div class="postbox" style="display:none;">
-						<h3><?php _e( 'Label markup', 'woocommerce-dymo' ); ?></h3>
-						<div class="inside dymo-markup">
-							<table class="form-table">
-								<tr>
-									<th>
-    									<label for="woocommerce_dymo_label"><b><?php _e( 'Your Label XML:', 'woocommerce-dymo' ); ?></b></label>
-    								</th>
-    								<td>
-    									<textarea name="woocommerce_dymo_label" cols="45" rows="3" class="regular-text" style="width:100%;height:200px;"><DieCutLabel Version="8.0" Units="twips">
-	<PaperOrientation>Landscape</PaperOrientation>
-	<Id>LargeAddress</Id>
-	<PaperName>30321 Large Address</PaperName>
-	<DrawCommands>
-		<RoundRectangle X="0" Y="0" Width="2025" Height="5020" Rx="270" Ry="270" />
-	</DrawCommands>
-	<ObjectInfo>
-		<TextObject>
-			<Name>EXTRA</Name>
-			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
-			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
-			<LinkedObjectName></LinkedObjectName>
-			<Rotation>Rotation0</Rotation>
-			<IsMirrored>False</IsMirrored>
-			<IsVariable>False</IsVariable>
-			<HorizontalAlignment>Right</HorizontalAlignment>
-			<VerticalAlignment>Top</VerticalAlignment>
-			<TextFitMode>None</TextFitMode>
-			<UseFullFontHeight>True</UseFullFontHeight>
-			<Verticalized>False</Verticalized>
-			<StyledText>
-				<Element>
-					<String> </String>
-					<Attributes>
-						<Font Family="Arial" Size="8" Bold="False" Italic="False" Underline="False" Strikeout="False" />
-						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
-					</Attributes>
-				</Element>
-			</StyledText>
-		</TextObject>
-		<Bounds X="2812" Y="1715" Width="1958" Height="225" />
-	</ObjectInfo>
-	<ObjectInfo>
-		<AddressObject>
-			<Name>ORDER</Name>
-			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
-			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
-			<LinkedObjectName></LinkedObjectName>
-			<Rotation>Rotation0</Rotation>
-			<IsMirrored>False</IsMirrored>
-			<IsVariable>True</IsVariable>
-			<HorizontalAlignment>Left</HorizontalAlignment>
-			<VerticalAlignment>Top</VerticalAlignment>
-			<TextFitMode>ShrinkToFit</TextFitMode>
-			<UseFullFontHeight>True</UseFullFontHeight>
-			<Verticalized>False</Verticalized>
-			<StyledText>
-				<Element>
-					<String>Bedrijfsnaam
-Contactnaam
-Straat
-Postcode + Plaats
-Land</String>
-					<Attributes>
-						<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
-						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
-					</Attributes>
-				</Element>
-			</StyledText>
-			<ShowBarcodeFor9DigitZipOnly>False</ShowBarcodeFor9DigitZipOnly>
-			<BarcodePosition>AboveAddress</BarcodePosition>
-			<LineFonts>
-				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
-				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
-				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
-				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
-				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
-			</LineFonts>
-		</AddressObject>
-		<Bounds X="337" Y="165" Width="4455" Height="1220" />
-	</ObjectInfo>
-	<ObjectInfo>
-		<TextObject>
-			<Name>COMPANY</Name>
-			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
-			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
-			<LinkedObjectName></LinkedObjectName>
-			<Rotation>Rotation0</Rotation>
-			<IsMirrored>False</IsMirrored>
-			<IsVariable>False</IsVariable>
-			<HorizontalAlignment>Left</HorizontalAlignment>
-			<VerticalAlignment>Top</VerticalAlignment>
-			<TextFitMode>None</TextFitMode>
-			<UseFullFontHeight>True</UseFullFontHeight>
-			<Verticalized>False</Verticalized>
-			<StyledText>
-				<Element>
-					<String> </String>
-					<Attributes>
-						<Font Family="Arial" Size="8" Bold="False" Italic="False" Underline="False" Strikeout="False" />
-						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
-					</Attributes>
-				</Element>
-			</StyledText>
-		</TextObject>
-		<Bounds X="322" Y="1670" Width="3165" Height="270" />
-	</ObjectInfo>
-</DieCutLabel>							</textarea><br />
-										<span class="description"><?php echo __( 'Copy Paste your complete label XML output <u>without</u> the first line:', 'woocommerce-dymo' ).'<pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre>';?></span>
-    								</td>
-    							</tr>
-								<tr>
-									<td colspan=2>
-										<p class="submit"><input type="submit" name="Submit" class="button-primary" value="<?php esc_attr_e( 'Save Changes', 'woocommerce-dymo' ); ?>" /></p>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
 					<div class="postbox">
 						<h3><?php _e( 'General Settings', 'woocommerce-dymo' ); ?></h3>
 						<div class="inside dymo-settings">

@@ -47,11 +47,7 @@ function woocommerce_dymo_create_box_content() {
 ?>
 	<table class="form-table dymo-box">
 		<tr>
-			<?php if (( get_option( 'woocommerce_ship_to_billing_address_only' ) == 'no' && get_option('woocommerce_require_shipping_address')=='yes' )||  get_option('woocommerce_calc_shipping')=='yes' ) { ?>
 			<td><a class="button dymo-link" href="<?php echo wp_nonce_url(admin_url('?print_dymo=true&post='.$post_id.'&type=print_shipping_label'), 'print-dymo'); ?>"><?php _e('Print Shipping Label', 'woocommerce-dymo'); ?></a></td>
-			<?php } else { ?>
-			<td><?php _e( 'Shipping is not active. You can\'t print shipping labels if you don\'t use shipping in WooCommerce.', 'woocommerce-dymo' ); ?></td>
-			<?php } ?>
 		</tr>
 	</table>
 <?php }
@@ -64,9 +60,8 @@ function woocommerce_dymo_alter_order_actions($column) {
 	$order = new WC_Order( $post->ID );
     switch ($column) {
 		case "order_actions" :
-		if (( get_option( 'woocommerce_ship_to_billing_address_only' ) == 'no' && get_option('woocommerce_require_shipping_address')=='yes' )||  get_option('woocommerce_calc_shipping')=='yes' ) {
 		?><p style="display:block;clear:both;height:14px;"><a class="button dymo-link tips" data-tip="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" href="<?php echo wp_nonce_url(admin_url('?print_dymo=true&post='.$post->ID.'&type=print_shipping_label'), 'print-dymo'); ?>"><img src="<?php echo plugins_url( 'img/icon-print-shipping.png' , dirname(__FILE__) ); ?>" alt="<?php _e('Print Shipping Label', 'woocommerce-dymo'); ?>" width="14"></a></p>
-		<?php }
+		<?php 
 		break;
     }
 }
@@ -115,9 +110,6 @@ function woo_dymo_convert_address($adres) {
 /**
 * Output preview if needed
 */
-function woocommerce_dymo_twin_roll() {
-    return get_option('woocommerce_dymo_twin_roll');
-}
 function woocommerce_dymo_print_company_name() {
 	if (get_option('woocommerce_dymo_company_name') != '') {
 		return get_option('woocommerce_dymo_company_name');
@@ -129,9 +121,100 @@ function woocommerce_dymo_print_company_extra() {
 	}
 }
 function woocommerce_dymo_print_label() {
-	if (get_option('woocommerce_dymo_label') != '') {
-		return get_option('woocommerce_dymo_label');
-	}
+	return '<DieCutLabel Version="8.0" Units="twips">
+	<PaperOrientation>Landscape</PaperOrientation>
+	<Id>LargeAddress</Id>
+	<PaperName>30321 Large Address</PaperName>
+	<DrawCommands>
+		<RoundRectangle X="0" Y="0" Width="2025" Height="5020" Rx="270" Ry="270" />
+	</DrawCommands>
+	<ObjectInfo>
+		<TextObject>
+			<Name>EXTRA</Name>
+			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+			<LinkedObjectName></LinkedObjectName>
+			<Rotation>Rotation0</Rotation>
+			<IsMirrored>False</IsMirrored>
+			<IsVariable>False</IsVariable>
+			<HorizontalAlignment>Right</HorizontalAlignment>
+			<VerticalAlignment>Top</VerticalAlignment>
+			<TextFitMode>None</TextFitMode>
+			<UseFullFontHeight>True</UseFullFontHeight>
+			<Verticalized>False</Verticalized>
+			<StyledText>
+				<Element>
+					<String> </String>
+					<Attributes>
+						<Font Family="Arial" Size="8" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+					</Attributes>
+				</Element>
+			</StyledText>
+		</TextObject>
+		<Bounds X="2812" Y="1715" Width="1958" Height="225" />
+	</ObjectInfo>
+	<ObjectInfo>
+		<AddressObject>
+			<Name>ADDRESS</Name>
+			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+			<LinkedObjectName></LinkedObjectName>
+			<Rotation>Rotation0</Rotation>
+			<IsMirrored>False</IsMirrored>
+			<IsVariable>True</IsVariable>
+			<HorizontalAlignment>Left</HorizontalAlignment>
+			<VerticalAlignment>Top</VerticalAlignment>
+			<TextFitMode>ShrinkToFit</TextFitMode>
+			<UseFullFontHeight>True</UseFullFontHeight>
+			<Verticalized>False</Verticalized>
+			<StyledText>
+				<Element>
+					<String>adres</String>
+					<Attributes>
+						<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+					</Attributes>
+				</Element>
+			</StyledText>
+			<ShowBarcodeFor9DigitZipOnly>False</ShowBarcodeFor9DigitZipOnly>
+			<BarcodePosition>AboveAddress</BarcodePosition>
+			<LineFonts>
+				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+				<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+			</LineFonts>
+		</AddressObject>
+		<Bounds X="337" Y="165" Width="4455" Height="1220" />
+	</ObjectInfo>
+	<ObjectInfo>
+		<TextObject>
+			<Name>COMPANY</Name>
+			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+			<LinkedObjectName></LinkedObjectName>
+			<Rotation>Rotation0</Rotation>
+			<IsMirrored>False</IsMirrored>
+			<IsVariable>False</IsVariable>
+			<HorizontalAlignment>Left</HorizontalAlignment>
+			<VerticalAlignment>Top</VerticalAlignment>
+			<TextFitMode>None</TextFitMode>
+			<UseFullFontHeight>True</UseFullFontHeight>
+			<Verticalized>False</Verticalized>
+			<StyledText>
+				<Element>
+					<String> </String>
+					<Attributes>
+						<Font Family="Arial" Size="8" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+					</Attributes>
+				</Element>
+			</StyledText>
+		</TextObject>
+		<Bounds X="322" Y="1670" Width="3165" Height="270" />
+	</ObjectInfo></DieCutLabel>';
 }
 function woocommerce_dymo_window() {
 	if (isset($_GET['print_dymo'])) {
@@ -159,7 +242,7 @@ function woocommerce_dymo_window() {
 <body>
 <div id=error class=error><?php _e('Something went wrong while printing your label.', 'woocommerce-dymo');?> <?php _e('Please make sure your label contains the required object fields.', 'woocommerce-dymo');?> <?php echo sprintf(__('For more information about how to create your labels, see %s.', 'woocommerce-dymo'),'<a href="http://wordpress.geev.nl/support/documentation/" target=_blank">'.__('our documentation','woocommerce-dymo').'</a>');?></div>
 <script type="text/javascript">template = '<?php echo '<?xml version="1.0" encoding="utf-8"?>'; ?>' + '<?php echo preg_replace('/\s\s+/', '\' + \'', woocommerce_dymo_print_label()); ?>';</script>
-	<?php if ($action == 'print_billing_label') { $actie=__('Billing Label', 'woocommerce-dymo'); } else { $actie=__('Shipping Label', 'woocommerce-dymo'); } echo '<h1>'.sprintf( __('Print DYMO %s' , 'woocommerce-dymo') , $actie ).'</h1>'; 
+	<?php $actie=__('Shipping Label', 'woocommerce-dymo'); echo '<h1>'.sprintf( __('Print DYMO %s' , 'woocommerce-dymo') , $actie ).'</h1>'; 
 	
 	
 	$content = ob_get_clean();
@@ -170,10 +253,8 @@ function woocommerce_dymo_window() {
   		  ob_start();?>
 		  <div class=printing id=id_<?php echo $i;?>><p><strong><?php _e('Printing label for order:', 'woocommerce-dymo');?>  <?php echo $order->get_order_number(); ?></strong></p><p>
 			<?php 
-			if ($action == 'print_billing_label') { 
-				echo $order->get_formatted_billing_address(); 
-			} else { 
-				echo $order->get_formatted_shipping_address();  }
+			 	if($order->get_formatted_shipping_address()!="") { $adres = $order->get_formatted_shipping_address(); } else { $adres = $order->get_formatted_billing_address(); }
+				echo $adres;
 			?></p></div>
 	<script type="text/javascript">
 	var z=1;
@@ -186,28 +267,16 @@ function woocommerce_dymo_window() {
 		var printer=printers[0];
 		if (typeof printer.isTwinTurbo != "undefined")
     {
-        if (printer.isTwinTurbo) { 
-		<?php if(woocommerce_dymo_twin_roll()=='left') { ?>
-		printParams.twinTurboRoll = dymo.label.framework.TwinTurboRoll.Left; // or Left or Right 
-		<?php } elseif(woocommerce_dymo_twin_roll()=='right') {?>
-		printParams.twinTurboRoll = dymo.label.framework.TwinTurboRoll.Right;
-		<?php } else { ?>
-		printParams.twinTurboRoll = dymo.label.framework.TwinTurboRoll.Auto; // or Left or Right 
-		<?php }?>
+        if (printer.isTwinTurbo) {
+			printParams.twinTurboRoll = dymo.label.framework.TwinTurboRoll.Auto; // or Left or Right 
 		} 
     }
-		
-		<?php if ($action == 'print_billing_label') { 
-			if($order->get_formatted_billing_address()!="") { $adres = woo_dymo_convert_address($order->get_formatted_billing_address()); }
-		} else { 
-			if($order->get_formatted_shipping_address()!="") { $adres = woo_dymo_convert_address($order->get_formatted_shipping_address()); }
-		}		
-		?>
+		<?php $adres=woo_dymo_convert_address($adres);?>
 		var adres_in = '<?php echo $adres;?>';
 		var adres= adres_in.replace(/\|/g, "\n");
 		<?php if(woocommerce_dymo_print_company_name()!="") { ?> label.setObjectText("COMPANY", "<?php echo woocommerce_dymo_print_company_name(); ?>"); <?php } ?>
 		<?php if(woocommerce_dymo_print_company_extra()!="") { ?> label.setObjectText("EXTRA", "<?php echo woocommerce_dymo_print_company_extra(); ?>");<?php }?>
-		<?php if($adres!="") { ?>label.setObjectText("ORDER", adres);<?php } ?>
+		<?php if($adres!="") { ?>label.setObjectText("ADDRESS", adres);<?php } ?>
 		setTimeout(function() {label.print(printer.name, dymo.label.framework.createLabelWriterPrintParamsXml(printParams)); },2000);
 		}
 		document.getElementById('error').style.display = 'none';

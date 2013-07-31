@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Dymo\n"
-"POT-Creation-Date: 2013-07-27 14:00+0100\n"
-"PO-Revision-Date: 2013-07-27 14:00+0100\n"
+"POT-Creation-Date: 2013-07-31 18:04+0100\n"
+"PO-Revision-Date: 2013-07-31 18:04+0100\n"
 "Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: Geev vormgeeving <info@geev.nl>\n"
 "MIME-Version: 1.0\n"
@@ -25,94 +25,79 @@ msgstr "WooCommerce - Print DYMO verzendadres labels"
 msgid "Your settings have been saved."
 msgstr "Instellingen zijn opgeslagen."
 
-#: ../admin/dymo-settings.php:31 ../inc/dymo-funct.php:53
+#: ../admin/dymo-settings.php:31
 msgid ""
-"Shipping is not active. You can't print shipping labels if you don't use "
-"shipping in WooCommerce."
+"Shipping is not active. Billing address is used instead of shipping address."
 msgstr ""
-"Verzending is n iet actief. Je kan geen verzendlabels printen wanneer "
-"verzending in WooCommerce niet juist ingesteld is."
+"Verzending is niet actief. Het factuuradres wordt gebruikt ipv. verzendadres."
 
 #: ../admin/dymo-settings.php:40
-msgid "Label markup"
-msgstr "Label opmaak"
-
-#: ../admin/dymo-settings.php:45
-msgid "Your Label XML:"
-msgstr "Label XML"
-
-#: ../admin/dymo-settings.php:147
-msgid ""
-"Copy Paste your complete label XML output <u>without</u> the first line:"
-msgstr "Knip en plak de complete label XML <u>zonder</u> de eerste regel:"
-
-#: ../admin/dymo-settings.php:152 ../admin/dymo-settings.php:190
-msgid "Save Changes"
-msgstr "Wijzigingen opslaan"
-
-#: ../admin/dymo-settings.php:159
 msgid "General Settings"
 msgstr "Algemene instellingen"
 
-#: ../admin/dymo-settings.php:164
+#: ../admin/dymo-settings.php:45
 msgid "Company name:"
 msgstr "Bedrijfsnaam:"
 
-#: ../admin/dymo-settings.php:169
+#: ../admin/dymo-settings.php:50
 msgid "Your custom company name for the labels."
 msgstr "Bedrijfsnaam voor op de labels."
 
-#: ../admin/dymo-settings.php:170 ../admin/dymo-settings.php:183
+#: ../admin/dymo-settings.php:51 ../admin/dymo-settings.php:64
 msgid "Note:"
 msgstr "Let op:"
 
-#: ../admin/dymo-settings.php:171
+#: ../admin/dymo-settings.php:52
 msgid "Leave blank to not to print a company name."
 msgstr "Laat leeg om geen bedrijfsnaam te printen."
 
-#: ../admin/dymo-settings.php:177
+#: ../admin/dymo-settings.php:58
 msgid "Company extra info:"
 msgstr "Extra bedrijfsinformatie:"
 
-#: ../admin/dymo-settings.php:182
+#: ../admin/dymo-settings.php:63
 msgid "Some extra info that is displayed on your label."
 msgstr "Extra informatie dat geprint kan worden op labels."
 
-#: ../admin/dymo-settings.php:184
+#: ../admin/dymo-settings.php:65
 msgid "Leave blank to not to print the info."
 msgstr "Laat leeg om geen extra info te printen."
 
-#: ../admin/dymo-settings.php:202
+#: ../admin/dymo-settings.php:71
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+#: ../admin/dymo-settings.php:83
 msgid "Debug"
 msgstr "Debug"
 
-#: ../admin/dymo-settings.php:205
+#: ../admin/dymo-settings.php:86
 msgid "If you have any problems, please check below data."
 msgstr ""
 "Wanneer er problemen zijn bij het printen van etiketten, controleer dan "
 "eerst onderstaande gegevens."
 
-#: ../admin/dymo-settings.php:208
+#: ../admin/dymo-settings.php:89
 msgid "Refresh"
 msgstr "Vernieuwen"
 
-#: ../admin/dymo-settings.php:209
+#: ../admin/dymo-settings.php:90
 msgid "Print printers information on"
 msgstr "Print printer informatie via"
 
-#: ../admin/dymo-settings.php:218
+#: ../admin/dymo-settings.php:99
 msgid "Buy Pro!"
 msgstr "Koop Pro!"
 
-#: ../admin/dymo-settings.php:220
+#: ../admin/dymo-settings.php:101
 msgid "Check out our "
 msgstr "Bekijk onze"
 
-#: ../admin/dymo-settings.php:220
+#: ../admin/dymo-settings.php:101
 msgid "to find out more about WooCommerce DYMO Print Pro."
 msgstr "voor meer informatie over WooCommerce DYMO Print Pro."
 
-#: ../admin/dymo-settings.php:221
+#: ../admin/dymo-settings.php:102
 msgid ""
 "For only &euro; 15,00 you will get a lot of features and access to our "
 "support section."
@@ -120,55 +105,55 @@ msgstr ""
 "Voor &euro; 15,00 krijg je veel meer functionaliteiten en toegang tot onze "
 "support sectie."
 
-#: ../admin/dymo-settings.php:222
+#: ../admin/dymo-settings.php:103
 msgid "A couple of features:"
 msgstr "Een aantal functionaliteiten:"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Print DYMO billing & shipping labels"
 msgstr "Print factuur & verzendadres labels"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Customize your own labels"
 msgstr "Maak je eigen labels"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Choose your label size"
 msgstr "Kies je labels"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Print your company logo on your labels"
 msgstr "Uw eigen logo voor op de labels."
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Use a DYMO Labelwriter 450 Twin Turbo"
 msgstr "Maak gebruik van een DYMO Labelwriter 450 Twin Turbo"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Bulk printing"
 msgstr "Print labels voor meerdere orders in 1 keer"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "New:"
 msgstr "Nieuw:"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Print Product list"
 msgstr "Print product lijst"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Print Order number"
 msgstr "Print order nummer:"
 
-#: ../admin/dymo-settings.php:223
+#: ../admin/dymo-settings.php:104
 msgid "Use a different label markup for shipping and invoice labels."
 msgstr "Gebruik een andere label layout voor verzendlabels en factuurlabels."
 
-#: ../admin/dymo-settings.php:227
+#: ../admin/dymo-settings.php:108
 msgid "Show Your Love"
 msgstr "Show Your Love"
 
-#: ../admin/dymo-settings.php:229
+#: ../admin/dymo-settings.php:110
 #, php-format
 msgid ""
 "This plugin is developed by %s, a Dutch graphic design and webdevelopment "
@@ -176,21 +161,21 @@ msgid ""
 msgstr ""
 "Deze plugin is ontwikkeld door %s, een Nederlands grafisch ontwerp bureau."
 
-#: ../admin/dymo-settings.php:230
+#: ../admin/dymo-settings.php:111
 msgid ""
 "If you are happy with this plugin please show your love by liking us on "
 "Facebook"
 msgstr "Blij met deze plugin? Like ons op Facebook!"
 
-#: ../admin/dymo-settings.php:232
+#: ../admin/dymo-settings.php:113
 msgid "Or"
 msgstr "Of"
 
-#: ../admin/dymo-settings.php:234
+#: ../admin/dymo-settings.php:115
 msgid "Rate the plugin 5&#9733; on WordPress.org"
 msgstr "Waardeer deze plugin met 5&#9733; op WordPress.org"
 
-#: ../admin/dymo-settings.php:235
+#: ../admin/dymo-settings.php:116
 msgid "Blog about it & link to the plugin page"
 msgstr "Schrijf een blog en link naar de plugin pagina"
 
@@ -198,47 +183,56 @@ msgstr "Schrijf een blog en link naar de plugin pagina"
 msgid "DYMO Print"
 msgstr "DYMO Print"
 
-#: ../inc/dymo-funct.php:42 ../inc/dymo-funct.php:155
+#: ../inc/dymo-funct.php:42 ../inc/dymo-funct.php:238
 msgid "Print DYMO labels"
 msgstr "Print DYMO labels"
 
-#: ../inc/dymo-funct.php:51 ../inc/dymo-funct.php:68
+#: ../inc/dymo-funct.php:50 ../inc/dymo-funct.php:63
 msgid "Print Shipping Label"
 msgstr "Verzend label"
 
-#: ../inc/dymo-funct.php:160
+#: ../inc/dymo-funct.php:243
 msgid "Something went wrong while printing your label."
 msgstr "Er ging iets verkeerd bij het printen van de label(s)."
 
-#: ../inc/dymo-funct.php:160
+#: ../inc/dymo-funct.php:243
 msgid "Please make sure your label contains the required object fields."
 msgstr "Zorg er a.u.b. voor dat het label alle verplichte velden bevat."
 
-#: ../inc/dymo-funct.php:160
+#: ../inc/dymo-funct.php:243
 #, php-format
 msgid "For more information about how to create your labels, see %s."
 msgstr "Voor meer informatie over het maken van je eigen labels, zie %s."
 
-#: ../inc/dymo-funct.php:160
+#: ../inc/dymo-funct.php:243
 msgid "our documentation"
 msgstr "onze documentatie"
 
-#: ../inc/dymo-funct.php:162
-msgid "Billing Label"
-msgstr "Factuur label"
-
-#: ../inc/dymo-funct.php:162
+#: ../inc/dymo-funct.php:245
 msgid "Shipping Label"
 msgstr "Verzend label"
 
-#: ../inc/dymo-funct.php:162
+#: ../inc/dymo-funct.php:245
 #, php-format
 msgid "Print DYMO %s"
 msgstr "Print DYMO %s"
 
-#: ../inc/dymo-funct.php:171
+#: ../inc/dymo-funct.php:254
 msgid "Printing label for order:"
 msgstr "Label voor bestelling:"
+
+#~ msgid "Label markup"
+#~ msgstr "Label opmaak"
+
+#~ msgid "Your Label XML:"
+#~ msgstr "Label XML"
+
+#~ msgid ""
+#~ "Copy Paste your complete label XML output <u>without</u> the first line:"
+#~ msgstr "Knip en plak de complete label XML <u>zonder</u> de eerste regel:"
+
+#~ msgid "Billing Label"
+#~ msgstr "Factuur label"
 
 #~ msgid "Let's get pro!"
 #~ msgstr "Let's get pro!"

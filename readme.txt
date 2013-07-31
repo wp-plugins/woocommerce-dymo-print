@@ -5,7 +5,7 @@ Author URI: http://www.geev.nl
 Tags: woocommerce, dymo
 Requires at least: 3.3
 Tested up to: 3.6-RC1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2
 
 This plugin adds the possibility to print shipping addresses on your DYMO label printer.
@@ -27,6 +27,8 @@ The plugin adds a new side panel on the order page to allow shop managers to pri
 * Print DYMO shipping labels in a second
 * Localisation: English & Dutch
 
+**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.6-RC1)**
+
 == Installation ==
 
 1. Install WooCommerce DYMO Print either via the Wordpress.org plugin directory or by uploading the files to the '/wp-content/plugins/' directory.
@@ -46,6 +48,12 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 
 == Changelog ==
 ***WooCommerce DYMO Print***
+= 2013.07.31 - version 1.1.4 =
+* Removed: check if shipping is active. Now it's possible to print billing labels instead.
+* Added: support for billing address if order has no shipping address.
+* Fixed: better support for label layout
+* Fixed: label layout compatible with PRO version
+
 = 2013.07.27 - version 1.1.3 =
 * Added: uninstall.php to remove all presets.
 * Fixed: several small bugfixes
