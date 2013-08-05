@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.geev.nl/product/woocommerce-dymo-print/
 Author URI: http://www.geev.nl
 Tags: woocommerce, dymo
 Requires at least: 3.3
-Tested up to: 3.6-RC1
+Tested up to: 3.6
 Stable tag: 1.1.4
 License: GPLv2
 
@@ -19,7 +19,7 @@ For more information, check out [our website](http://wordpress.geev.nl/product/w
 
 **Free version**
 
-This free version may be used as is. If you want more options and support you can buy WooCommerce DYMO Print Pro for only &euro; 15,00.
+This free version may be used as is. If you want more options and support you can buy WooCommerce DYMO Print Pro for only &euro; 19,00.
 The plugin adds a new side panel on the order page to allow shop managers to print out DYMO labels on the fly. This is useful for a lot of shops and makes live a lot easier ;-) .
 
 **Features**
@@ -27,7 +27,7 @@ The plugin adds a new side panel on the order page to allow shop managers to pri
 * Print DYMO shipping labels in a second
 * Localisation: English & Dutch
 
-**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.6-RC1).**
+**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.6).**
 
 Rate us on http://wordpress.org/plugins/woocommerce-dymo-print/ and receive 20% discount on our PRO version. Just contact us after you've placed your rating & review.
 
@@ -120,4 +120,4 @@ You can use a Labelwriter 400 or Labelwriter 450 (Turbo). If you wan't to use a 
 The free version only supports basic DYMO address labels (89x36mm - #99012). With the PRO version you could choose your own markup and labelsize. 
 
 = Why is there a PRO version? = 
-We want to give everyone the opportunity to use and try our plugins, but if you want to get more options and access to our support section you can buy our PRO version. WooCommerce DYMO Print Pro costs only **&euro; 15,00**.
+We want to give everyone the opportunity to use and try our plugins, but if you want to get more options and access to our support section you can buy our PRO version. WooCommerce DYMO Print Pro costs only **&euro; 19,00**.
