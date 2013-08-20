@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Dymo\n"
-"POT-Creation-Date: 2013-07-31 18:04+0100\n"
-"PO-Revision-Date: 2013-07-31 18:04+0100\n"
+"POT-Creation-Date: 2013-08-20 11:35+0100\n"
+"PO-Revision-Date: 2013-08-20 11:35+0100\n"
 "Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: Geev vormgeeving <info@geev.nl>\n"
 "MIME-Version: 1.0\n"
@@ -99,10 +99,10 @@ msgstr "voor meer informatie over WooCommerce DYMO Print Pro."
 
 #: ../admin/dymo-settings.php:102
 msgid ""
-"For only &euro; 15,00 you will get a lot of features and access to our "
+"For only &euro; 19,00 you will get a lot of features and access to our "
 "support section."
 msgstr ""
-"Voor &euro; 15,00 krijg je veel meer functionaliteiten en toegang tot onze "
+"Voor &euro; 19,00 krijg je veel meer functionaliteiten en toegang tot onze "
 "support sectie."
 
 #: ../admin/dymo-settings.php:103

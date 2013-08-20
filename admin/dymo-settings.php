@@ -99,7 +99,7 @@ function woocommerce_dymo_page() {
 						<h3><?php _e( 'Buy Pro!', 'woocommerce-dymo' ); ?></h3>
 						<div class="inside dymo-preview">
 							<p><?php echo __( 'Check out our ', 'woocommerce-dymo' ); ?> <a href="http://wordpress.geev.nl/product/woocommerce-dymo-print/">website</a> <?php _e('to find out more about WooCommerce DYMO Print Pro.', 'woocommerce-dymo' );?></p>
-							<p><?php _e('For only &euro; 15,00 you will get a lot of features and access to our support section.', 'woocommerce-dymo' );?></p>
+							<p><?php _e('For only &euro; 19,00 you will get a lot of features and access to our support section.', 'woocommerce-dymo' );?></p>
 							<p><?php _e('A couple of features:', 'woocommerce-dymo' );?>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;"><li><?php _e('Print DYMO billing & shipping labels', 'woocommerce-dymo' );?></li><li><?php _e('Customize your own labels', 'woocommerce-dymo' );?></li><li><?php _e('Choose your label size', 'woocommerce-dymo' );?></li><li><?php _e('Print your company logo on your labels', 'woocommerce-dymo' );?></li><li><?php _e('Use a DYMO Labelwriter 450 Twin Turbo', 'woocommerce-dymo' );?></li><li><?php _e('Bulk printing', 'woocommerce-dymo' );?></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Print Product list', 'woocommerce-dymo' );?></strong></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Print Order number', 'woocommerce-dymo' );?></strong></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Use a different label markup for shipping and invoice labels.', 'woocommerce-dymo' );?></strong></li></ul>
 						</div>
