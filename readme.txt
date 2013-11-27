@@ -4,8 +4,8 @@ Plugin URI: http://wordpress.geev.nl/product/woocommerce-dymo-print/
 Author URI: http://www.geev.nl
 Tags: woocommerce, dymo
 Requires at least: 3.3
-Tested up to: 3.6
-Stable tag: 1.1.5
+Tested up to: 3.7.1
+Stable tag: 1.1.6
 License: GPLv2
 
 This plugin adds the possibility to print shipping addresses on your DYMO label printer.
@@ -21,6 +21,9 @@ For more information, check out [our website](http://wordpress.geev.nl/product/w
 
 This free version may be used as is. If you want more options and support you can buy WooCommerce DYMO Print Pro for only &euro; 19,00.
 The plugin adds a new side panel on the order page to allow shop managers to print out DYMO labels on the fly. This is useful for a lot of shops and makes live a lot easier ;-) .
+
+**DYMO and Windows 8.1**
+In some situations WooCommerce DYMO Print is not working on Windows 8.1. This depends on your computer configuration. Please see FAQ for more info.
 
 **Features**
 
@@ -50,6 +53,10 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 
 == Changelog ==
 ***WooCommerce DYMO Print***
+= 2013.11.27 - version 1.1.6 =
+* Tweak: Updated Dymo Javascript framework to version 1.2.5 which should fix some issues in IE11 and Windows 8.1
+* Fixed: Bug when NextGen Gallery is used
+
 = 2013.08.20 - version 1.1.5 =
 * Fixed: Several small bugfixes
 
@@ -102,6 +109,17 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 * First release
 
 == Frequently Asked Questions ==
+= WooCommerce DYMO Print and Windows 8.1 =
+In some situations WooCommerce DYMO Print is not working on Windows 8.1. This is because DYMO labelwriter is not fully supported on Windows 8.1. An update to the DYMO Label Software and drivers is scheduled in Q1 2014. We also have to wait before DYMO has their job done.
+
+= WooCommerce DYMO Print and Internet Explorer 11 =
+If your DYMO printer is not printing you probably get a messages "No Dymo Printers installed". 
+Please follow instructions on (http://wordpress.geev.nl/support/documentation/woocommerce-dymo-print-plugin-documentation/woocommerce-dymo-print-internet-explorer/).
+
+= Message "No DYMO Printers installed" but I am sure it is! =
+If your DYMO printer is not printing you probably get a messages "No Dymo Printers installed". 
+Please follow instructions on (http://wordpress.geev.nl/support/documentation/woocommerce-dymo-print-plugin-documentation/woocommerce-dymo-print-internet-explorer/).
+
 
 = Does this plugin support a DYMO labelwriter connected to an Apple? = 
 We really can't give an answer about that. Some people say it does, some other say it doesn't. We really can't figure out where the problems are, so just try it out yourself. It's free!

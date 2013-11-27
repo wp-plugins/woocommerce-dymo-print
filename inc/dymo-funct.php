@@ -215,6 +215,22 @@ function woocommerce_dymo_print_label() {
 		</TextObject>
 		<Bounds X="322" Y="1670" Width="3165" Height="270" />
 	</ObjectInfo></DieCutLabel>';
+
+}
+function woocommerce_dymo_window_2() {
+	if (isset($_GET['print_dymo'])) {
+		$nonce = $_REQUEST['_wpnonce'];
+		global $woocommerce;
+  		if (!wp_verify_nonce($nonce, 'print-dymo') || !is_user_logged_in() ) die('You are not allowed to view this page.');
+		$order="";
+		$mypost=$_GET['post'];
+    	$orders = explode(',', $mypost);
+		$action = $_GET['type'];
+		/* here print flow*/
+		echo 'test';
+		exit();
+
+	}
 }
 function woocommerce_dymo_window() {
 	if (isset($_GET['print_dymo'])) {
@@ -228,7 +244,6 @@ function woocommerce_dymo_window() {
 		$mypost=$_GET['post'];
     	$orders = explode(',', $mypost);
 		$action = $_GET['type'];
-		ob_start();
 /* here print flow*/
 ?>
 <!DOCTYPE HTML>
