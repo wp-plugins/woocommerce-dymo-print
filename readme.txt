@@ -23,6 +23,7 @@ This free version may be used as is. If you want more options and support you ca
 The plugin adds a new side panel on the order page to allow shop managers to print out DYMO labels on the fly. This is useful for a lot of shops and makes live a lot easier ;-) .
 
 **DYMO and Windows 8.1**
+
 In some situations WooCommerce DYMO Print is not working on Windows 8.1. This depends on your computer configuration. Please see FAQ for more info.
 
 **Features**
@@ -30,7 +31,7 @@ In some situations WooCommerce DYMO Print is not working on Windows 8.1. This de
 * Print DYMO shipping labels in a second
 * Localisation: English & Dutch
 
-**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.6).**
+**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.7.1).**
 
 Rate us on http://wordpress.org/plugins/woocommerce-dymo-print/ and receive 20% discount on our PRO version. Just contact us after you've placed your rating & review.
 
