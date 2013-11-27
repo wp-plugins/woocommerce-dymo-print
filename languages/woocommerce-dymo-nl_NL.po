@@ -1,0 +1,416 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Dymo\n"
+"POT-Creation-Date: 2013-11-27 17:29+0100\n"
+"PO-Revision-Date: 2013-11-27 17:30+0100\n"
+"Last-Translator: Bart Pluijms <info@geev.nl>\n"
+"Language-Team: Geev vormgeeving <info@geev.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin/dymo-settings.php:10
+msgid "You do not have sufficient permissions to access this page."
+msgstr "U heeft onvoldoende rechten om deze pagina te bekijken."
+
+#: ../admin/dymo-settings.php:26
+msgid "WooCommerce - Print DYMO shipping labels"
+msgstr "WooCommerce - Print DYMO verzendadres labels"
+
+#: ../admin/dymo-settings.php:28
+msgid "Your settings have been saved."
+msgstr "Instellingen zijn opgeslagen."
+
+#: ../admin/dymo-settings.php:31
+msgid ""
+"Shipping is not active. Billing address is used instead of shipping address."
+msgstr ""
+"Verzending is niet actief. Het factuuradres wordt gebruikt ipv. verzendadres."
+
+#: ../admin/dymo-settings.php:40
+msgid "General Settings"
+msgstr "Algemene instellingen"
+
+#: ../admin/dymo-settings.php:45
+msgid "Company name:"
+msgstr "Bedrijfsnaam:"
+
+#: ../admin/dymo-settings.php:50
+msgid "Your custom company name for the labels."
+msgstr "Bedrijfsnaam voor op de labels."
+
+#: ../admin/dymo-settings.php:51 ../admin/dymo-settings.php:64
+msgid "Note:"
+msgstr "Let op:"
+
+#: ../admin/dymo-settings.php:52
+msgid "Leave blank to not to print a company name."
+msgstr "Laat leeg om geen bedrijfsnaam te printen."
+
+#: ../admin/dymo-settings.php:58
+msgid "Company extra info:"
+msgstr "Extra bedrijfsinformatie:"
+
+#: ../admin/dymo-settings.php:63
+msgid "Some extra info that is displayed on your label."
+msgstr "Extra informatie dat geprint kan worden op labels."
+
+#: ../admin/dymo-settings.php:65
+msgid "Leave blank to not to print the info."
+msgstr "Laat leeg om geen extra info te printen."
+
+#: ../admin/dymo-settings.php:71
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+#: ../admin/dymo-settings.php:83
+msgid "Debug"
+msgstr "Debug"
+
+#: ../admin/dymo-settings.php:86
+msgid "If you have any problems, please check below data."
+msgstr ""
+"Wanneer er problemen zijn bij het printen van etiketten, controleer dan "
+"eerst onderstaande gegevens."
+
+#: ../admin/dymo-settings.php:89
+msgid "Refresh"
+msgstr "Vernieuwen"
+
+#: ../admin/dymo-settings.php:90
+msgid "Print printers information on"
+msgstr "Print printer informatie via"
+
+#: ../admin/dymo-settings.php:99
+msgid "Buy Pro!"
+msgstr "Koop Pro!"
+
+#: ../admin/dymo-settings.php:101
+msgid "Check out our "
+msgstr "Bekijk onze"
+
+#: ../admin/dymo-settings.php:101
+msgid "to find out more about WooCommerce DYMO Print Pro."
+msgstr "voor meer informatie over WooCommerce DYMO Print Pro."
+
+#: ../admin/dymo-settings.php:102
+msgid ""
+"For only &euro; 19,00 you will get a lot of features and access to our "
+"support section."
+msgstr ""
+"Voor &euro; 19,00 krijg je veel meer functionaliteiten en toegang tot onze "
+"support sectie."
+
+#: ../admin/dymo-settings.php:103
+msgid "A couple of features:"
+msgstr "Een aantal functionaliteiten:"
+
+#: ../admin/dymo-settings.php:104
+msgid "Print DYMO billing & shipping labels"
+msgstr "Print factuur & verzendadres labels"
+
+#: ../admin/dymo-settings.php:104
+msgid "Customize your own labels"
+msgstr "Maak je eigen labels"
+
+#: ../admin/dymo-settings.php:104
+msgid "Choose your label size"
+msgstr "Kies je labels"
+
+#: ../admin/dymo-settings.php:104
+msgid "Print your company logo on your labels"
+msgstr "Uw eigen logo voor op de labels."
+
+#: ../admin/dymo-settings.php:104
+msgid "Use a DYMO Labelwriter 450 Twin Turbo"
+msgstr "Maak gebruik van een DYMO Labelwriter 450 Twin Turbo"
+
+#: ../admin/dymo-settings.php:104
+msgid "Bulk printing"
+msgstr "Print labels voor meerdere orders in 1 keer"
+
+#: ../admin/dymo-settings.php:104
+msgid "New:"
+msgstr "Nieuw:"
+
+#: ../admin/dymo-settings.php:104
+msgid "Print Product list"
+msgstr "Print product lijst"
+
+#: ../admin/dymo-settings.php:104
+msgid "Print Order number"
+msgstr "Print order nummer:"
+
+#: ../admin/dymo-settings.php:104
+msgid "Use a different label markup for shipping and invoice labels."
+msgstr "Gebruik een andere label layout voor verzendlabels en factuurlabels."
+
+#: ../admin/dymo-settings.php:108
+msgid "Show Your Love"
+msgstr "Show Your Love"
+
+#: ../admin/dymo-settings.php:110
+#, php-format
+msgid ""
+"This plugin is developed by %s, a Dutch graphic design and webdevelopment "
+"company."
+msgstr ""
+"Deze plugin is ontwikkeld door %s, een Nederlands grafisch ontwerp bureau."
+
+#: ../admin/dymo-settings.php:111
+msgid ""
+"If you are happy with this plugin please show your love by liking us on "
+"Facebook"
+msgstr "Blij met deze plugin? Like ons op Facebook!"
+
+#: ../admin/dymo-settings.php:113
+msgid "Or"
+msgstr "Of"
+
+#: ../admin/dymo-settings.php:115
+msgid "Rate the plugin 5&#9733; on WordPress.org"
+msgstr "Waardeer deze plugin met 5&#9733; op WordPress.org"
+
+#: ../admin/dymo-settings.php:116
+msgid "Blog about it & link to the plugin page"
+msgstr "Schrijf een blog en link naar de plugin pagina"
+
+#: ../inc/dymo-funct.php:38
+msgid "DYMO Print"
+msgstr "DYMO Print"
+
+#: ../inc/dymo-funct.php:42 ../inc/dymo-funct.php:253
+msgid "Print DYMO labels"
+msgstr "Print DYMO labels"
+
+#: ../inc/dymo-funct.php:50 ../inc/dymo-funct.php:63
+msgid "Print Shipping Label"
+msgstr "Verzend label"
+
+#: ../inc/dymo-funct.php:258
+msgid "Something went wrong while printing your label."
+msgstr "Er ging iets verkeerd bij het printen van de label(s)."
+
+#: ../inc/dymo-funct.php:258
+msgid "Please make sure your label contains the required object fields."
+msgstr "Zorg er a.u.b. voor dat het label alle verplichte velden bevat."
+
+#: ../inc/dymo-funct.php:258
+#, php-format
+msgid "For more information about how to create your labels, see %s."
+msgstr "Voor meer informatie over het maken van je eigen labels, zie %s."
+
+#: ../inc/dymo-funct.php:258
+msgid "our documentation"
+msgstr "onze documentatie"
+
+#: ../inc/dymo-funct.php:260
+msgid "Shipping Label"
+msgstr "Verzend label"
+
+#: ../inc/dymo-funct.php:260
+#, php-format
+msgid "Print DYMO %s"
+msgstr "Print DYMO %s"
+
+#: ../inc/dymo-funct.php:269
+msgid "Printing label for order:"
+msgstr "Label voor bestelling:"
+
+#~ msgid "Label markup"
+#~ msgstr "Label opmaak"
+
+#~ msgid "Your Label XML:"
+#~ msgstr "Label XML"
+
+#~ msgid ""
+#~ "Copy Paste your complete label XML output <u>without</u> the first line:"
+#~ msgstr "Knip en plak de complete label XML <u>zonder</u> de eerste regel:"
+
+#~ msgid "Billing Label"
+#~ msgstr "Factuur label"
+
+#~ msgid "Let's get pro!"
+#~ msgstr "Let's get pro!"
+
+#~ msgid ""
+#~ "You can buy an license key from our website. When using WooCommerce DYMO "
+#~ "Print Pro you are able to use more features. Check our website for more "
+#~ "information."
+#~ msgstr ""
+#~ "Je kan een licentiecode kopen via onze website. Wanneer je gebruik maakt "
+#~ "van WooCommerce DYMO Print Pro krijg je veel meer functionaliteiten. "
+#~ "Bekijk onze website voor meer informatie."
+
+#~ msgid "License Key"
+#~ msgstr "Licentiecode"
+
+#~ msgid ""
+#~ "Copy Paste your license key to activate WooCommerce DYMO Print Pro. After "
+#~ "activation you are able to download the PRO version."
+#~ msgstr ""
+#~ "Knip en plak je licentiecode om WooCommerce DYMO Print Pro te activeren. "
+#~ "Na activatie kan je de PRO versie automatisch downloaden."
+
+#~ msgid "Save License Key"
+#~ msgstr "Licentiecode opslaan"
+
+#~ msgid "Change settings for DYMO billing & shipping labels."
+#~ msgstr "Wijzig instellingen voor DYMO factuur & verzendadres labels."
+
+#~ msgid "Use %s as your DYMO label object-name"
+#~ msgstr "Gebruik %s als DYMO label object-naam"
+
+#~ msgid "Custom logo:"
+#~ msgstr "Logo:"
+
+#~ msgid "Upload Image"
+#~ msgstr "Upload afbeelding"
+
+#~ msgid "Your custom logo for the labels."
+#~ msgstr "Logo voor op de labels."
+
+#~ msgid "Leave blank to not to use a custom logo."
+#~ msgstr "Laat leeg om geen logo op de labels te printen."
+
+#~ msgid "Advanced Settings"
+#~ msgstr "Geavanceerde instellingen"
+
+#~ msgid "DYMO Twin Turbo settings"
+#~ msgstr "DYMO Twin Turbo instellingen"
+
+#~ msgid "DYMO Twin Turbo roll:"
+#~ msgstr "DYMO Twin Turbo rol:"
+
+#~ msgid "Auto"
+#~ msgstr "Auto"
+
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgid "Right"
+#~ msgstr "Rechts"
+
+#~ msgid "DYMO feature check"
+#~ msgstr "DYMO javascript controle"
+
+#~ msgid "Need Support?"
+#~ msgstr "Hulp nodig?"
+
+#~ msgid ""
+#~ "If you are having problems with this plugin, please contact us via our "
+#~ "website"
+#~ msgstr ""
+#~ "Heb je problemen met deze plugin? Neem dan contact met ons op via onze "
+#~ "website"
+
+#~ msgid ""
+#~ "We will try to support you as soon as possible, mostly within 24 hours."
+#~ msgstr ""
+#~ "We doen onze best om je zo snel mogelijk te helpen met je vragen, meestal "
+#~ "binnen 24 uur."
+
+#~ msgid ""
+#~ "On our website you will also find some basic support information for this "
+#~ "plugin."
+#~ msgstr "Op onze website vind je ook basis help informatie voor deze plugin."
+
+#~ msgid "Print Billing Label"
+#~ msgstr "Factuur label"
+
+#~ msgid "General"
+#~ msgstr "Algemeen"
+
+#~ msgid "Advanced"
+#~ msgstr "Geavanceerd"
+
+#~ msgid "License key"
+#~ msgstr "Licentiecode"
+
+#, fuzzy
+#~ msgid "Leave blank to not print a company name."
+#~ msgstr "Laat leeg om geen bedrijfsnaam te printen."
+
+#, fuzzy
+#~ msgid "Leave blank to not print a custom logo."
+#~ msgstr "Laat leeg om geen logo op de labels te printen."
+
+#~ msgid "Extra info:"
+#~ msgstr "Extra info:"
+
+#~ msgid ""
+#~ "Some extra info that is displayed on your label, for example a retour zip-"
+#~ "code."
+#~ msgstr "Extra informatie dat geprint kan worden op je labels."
+
+#, fuzzy
+#~ msgid "Leave blank to not print the info."
+#~ msgstr "Laat leeg om geen extra info te printen."
+
+#~ msgid "Print E-mail address:"
+#~ msgstr "Print e-mail adres:"
+
+#~ msgid "Print customer e-mail address on labels"
+#~ msgstr "Print e-mail adres van de klant op labels"
+
+#~ msgid "Print customer telephone number on labels"
+#~ msgstr "Print het telefoonnummer van de klant op labels"
+
+#~ msgid "Objects:"
+#~ msgstr "Objecten"
+
+#~ msgid "Use the DYMO Labelwriter software to make your own labels."
+#~ msgstr "Gebruik de DYMO Labelwriter software om je eigen labels te maken."
+
+#~ msgid ""
+#~ "On the basis of the general settings, your label requires the following "
+#~ "label objects:"
+#~ msgstr ""
+#~ "Op de basis van de algemene instellingen moet het label de volgende "
+#~ "verplichte objecten bevatten:"
+
+#~ msgid ""
+#~ "If your label doesn't provide above fields, your labels won't be printed."
+#~ msgstr ""
+#~ "Wanneer het label de bovenstaande objecten niet bevat, wordt het label "
+#~ "niet geprint."
+
+#~ msgid "Import DYMO label file:"
+#~ msgstr "Importeer DYMO Label bestand"
+
+#~ msgid ""
+#~ "Import your DYMO Label file, which you have made with the DYMO "
+#~ "Labelwriter software."
+#~ msgstr ""
+#~ "Importeer het DYMO label bestand dat je hebt gemaakt met de DYMO "
+#~ "Labelwriter software."
+
+#~ msgid "You can also use the import function above."
+#~ msgstr "Je kan ook bovenstaande import functie gebruiken."
+
+#~ msgid ""
+#~ "If you are having problems with this plugin, please contact us via our "
+#~ msgstr ""
+#~ "Heb je problemen met deze plugin? Neem dan contact met ons op via onze"
+
+#~ msgid ""
+#~ "WooCommerce is not active. Please activate plugin before using "
+#~ "WooCommerce DYMO Print plugin."
+#~ msgstr ""
+#~ "WooCommerce is niet actief. Activeer WooCommerce voordat je de "
+#~ "WooCommerce DYMO Print plugin kunt gebruiken."
+
+#~ msgid ""
+#~ "An Unexpected HTTP Error occurred during the API request.</p> <p><a href="
+#~ "\"?\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+#~ msgstr ""
+#~ "Een onbekende HTTP fout is opgetreden tijdens de API aanvraag. </p><p><a "
+#~ "href=\"?\" onclick=\"document.location.reload(); return false;\">Probeer "
+#~ "opnieuw</a>"
+
+#~ msgid "An unknown error occurred"
+#~ msgstr "Een onbekende fout is opgetreden."
