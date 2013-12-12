@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.geev.nl/product/woocommerce-dymo-print/
 Author URI: http://wordpress.geev.nl
 Tags: woocommerce, dymo
 Requires at least: 3.3
-Tested up to: 3.8-RC2
+Tested up to: 3.8
 Stable tag: 1.1.7
 License: GPLv2
 
@@ -31,7 +31,7 @@ In some situations WooCommerce DYMO Print is not working on Windows 8.1. This de
 * Print DYMO shipping labels in a second
 * Localisation: English & Dutch
 
-**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.8-RC2).**
+**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 3.8).**
 
 Rate us on http://wordpress.org/plugins/woocommerce-dymo-print/ and receive 20% discount on our PRO version. Just contact us after you've placed your rating & review.
 
@@ -56,7 +56,7 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 ***WooCommerce DYMO Print***
 
 = 2013.12.12 - version 1.1.7 =
-* We've checked WooCommerce DYMO Print on Wordpress 3.8-RC2 and have done some minor layout modifications
+* We've checked WooCommerce DYMO Print on Wordpress 3.8 and have done some minor layout modifications
 * Removed: unused styles and scripts
 
 = 2013.11.27 - version 1.1.6 =
