@@ -86,8 +86,8 @@ function woocommerce_dymo_page() {
 							<p><?php echo __( 'If you have any problems, please check below data.', 'woocommerce-dymo' );?></p>
 							<div id="printersInfoContainer"></div>
 <div class="printControls">
-            <button id="updateTableButton"><?php _e( 'Refresh', 'woocommerce-dymo' ); ?></button>
-            <button id="printButton"><?php _e( 'Print printers information on', 'woocommerce-dymo' ); ?></button>
+            <button class="button inputbutton" style="float:right" id="updateTableButton"><?php _e( 'Refresh', 'woocommerce-dymo' ); ?></button>
+            <button class="button button-primary" id="printButton"><?php _e( 'Print printers information on', 'woocommerce-dymo' ); ?></button>
             <select id="printersSelect"></select>
 
     </div>
@@ -109,7 +109,7 @@ function woocommerce_dymo_page() {
 						<div class="inside dymo-preview">
 							<p><?php echo sprintf(__( 'This plugin is developed by %s, a Dutch graphic design and webdevelopment company.', 'woocommerce-dymo' ),'Geev vormgeeving'); ?></p>
 							<p><?php _e( 'If you are happy with this plugin please show your love by liking us on Facebook', 'woocommerce-dymo' ); ?></p>
-							<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fgeevvormgeeving&amp;width=180&amp;height=62&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:62px;" allowTransparency="true"></iframe>
+							<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fgeevvormgeeving&amp;width=220&amp;height=62&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:62px;" allowTransparency="true"></iframe>
 							<p><?php _e( 'Or', 'woocommerce-dymo' ); ?></p>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;">
 								<li><a href="http://wordpress.org/extend/plugins/woocommerce-dymo-print/" target=_blank title="Woocommerce DYMO print"><?php _e( 'Rate the plugin 5&#9733; on WordPress.org', 'woocommerce-dymo' ); ?></a></li>

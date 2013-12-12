@@ -16,19 +16,7 @@ if ( ! function_exists( 'is_woocommerce_active' ) ) {
 
 function woocommerce_dymo_scripts() {
 	wp_register_script( 'woocommerce-dymo-js', plugins_url( '/js/woocommerce-dymo.js', dirname(__FILE__) ) );
-	wp_register_script( 'woocommerce-dymo-validate', plugins_url( '/js/jquery.validate.min.js', dirname(__FILE__) ) );
 	wp_enqueue_script( 'woocommerce-dymo-js', array('jquery') );
-	wp_enqueue_script( 'woocommerce-dymo-validate', array('jquery') );
-	wp_enqueue_script('common');
-	wp_enqueue_script('wp-lists');
-	wp_enqueue_script('postbox');
-}
-
-/**
-* Plugin specific styles
-*/
-function woocommerce_dymo_styles() {
-	//wp_enqueue_style( 'thickbox' );
 }
 
 /**

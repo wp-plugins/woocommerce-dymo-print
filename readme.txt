@@ -1,11 +1,11 @@
 === WooCommerce DYMO Print ===
 Contributors: bpluijms
 Plugin URI: http://wordpress.geev.nl/product/woocommerce-dymo-print/
-Author URI: http://www.geev.nl
+Author URI: http://wordpress.geev.nl
 Tags: woocommerce, dymo
 Requires at least: 3.3
-Tested up to: 3.7.1
-Stable tag: 1.1.6
+Tested up to: 3.8-RC2
+Stable tag: 1.1.7
 License: GPLv2
 
 This plugin adds the possibility to print shipping addresses on your DYMO label printer.
@@ -54,6 +54,11 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 
 == Changelog ==
 ***WooCommerce DYMO Print***
+
+= 2013.12.12 - version 1.1.7 =
+* We've checked WooCommerce DYMO Print on Wordpress 3.8-RC2 and have done some minor layout modifications
+* Removed: unused styles and scripts
+
 = 2013.11.27 - version 1.1.6 =
 * Tweak: Updated Dymo Javascript framework to version 1.2.5 which should fix some issues in IE11 and Windows 8.1
 * Fixed: Bug when NextGen Gallery is used
@@ -120,7 +125,6 @@ Please follow instructions on (http://wordpress.geev.nl/support/documentation/wo
 = Message "No DYMO Printers installed" but I am sure it is! =
 If your DYMO printer is not printing you probably get a messages "No Dymo Printers installed". 
 Please follow instructions on (http://wordpress.geev.nl/support/documentation/woocommerce-dymo-print-plugin-documentation/woocommerce-dymo-print-internet-explorer/).
-
 
 = Does this plugin support a DYMO labelwriter connected to an Apple? = 
 We really can't give an answer about that. Some people say it does, some other say it doesn't. We really can't figure out where the problems are, so just try it out yourself. It's free!
