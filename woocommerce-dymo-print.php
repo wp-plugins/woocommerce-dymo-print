@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce DYMO Print
 Plugin URI: http://wordpress.geev.nl/product/woocommerce-dymo-print/
 Description: This plugin provides shipping labels for your DYMO label printer from the backend. - Free version
-Version: 1.1.7
+Version: 1.2
 Author: Bart Pluijms
 Author URI: http://wordpress.geev.nl/
 */
@@ -24,7 +24,7 @@ Author URI: http://wordpress.geev.nl/
 */
 require_once( 'inc/dymo-funct.php' );
 
-if (is_woocommerce_active()) {
+if (in_array('woocommerce/woocommerce.php',get_option('active_plugins'))) {
   load_plugin_textdomain('woocommerce-dymo', false, dirname( plugin_basename( __FILE__ ) ) . '/languages');
   require_once('admin/dymo-settings.php');
   add_action('manage_shop_order_posts_custom_column', 'woocommerce_dymo_alter_order_actions', 3);
@@ -34,7 +34,7 @@ if (is_woocommerce_active()) {
   add_action('admin_enqueue_scripts', 'woocommerce_dymo_scripts');
 } else {
 /* if WooCommerce is not active show admin message */
-add_action('admin_notices', 'showAdminMessages');   
+add_action('admin_notices', 'showDymoAdminMessages');   
 }
 /**
 * Added help links to plugin page

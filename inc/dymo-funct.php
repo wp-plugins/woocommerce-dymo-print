@@ -1,23 +1,47 @@
 <?php
 /**
  * All functions
- */
+ * Removed @ 1.2
+ * Removed for WooCommerce 2.1
+ *
 if ( ! class_exists( 'WOO_Check' ) )
 	require_once 'class-check-woocommerce.php';
 
 /**
  * WC Detection
- */
+ * Removed @ 1.2
+ * Removed for WooCOmmerce 2.1
+ 
+ *
 if ( ! function_exists( 'is_woocommerce_active' ) ) {
 	function is_woocommerce_active() {
 		return WOO_Check::woocommerce_active_check();
 	}
 }
+*/
 
 function woocommerce_dymo_scripts() {
 	wp_register_script( 'woocommerce-dymo-js', plugins_url( '/js/woocommerce-dymo.js', dirname(__FILE__) ) );
 	wp_enqueue_script( 'woocommerce-dymo-js', array('jquery') );
 }
+
+/**
+* Admin messages
+* Since 1.2
+*/
+if ( !function_exists( 'showDymoMessage' ) ) {
+  function showDymoMessage($message, $errormsg = false)
+  {
+	if ($errormsg) { 
+	  echo '<div id="message" class="error">';
+	} else {
+	  echo '<div id="message" class="updated fade">';
+	}
+	echo "<p>$message</p></div>";
+  } 
+}   
+function showDymoAdminMessages() {showDymoMessage(__( 'WooCommerce is not active. Please activate plugin before using WooCommerce DYMO Print plugin.', 'woocommerce_dymo'), true);}
+
 
 /**
 * WordPress Administration Menu
@@ -52,38 +76,6 @@ function woocommerce_dymo_alter_order_actions($column) {
 		<?php 
 		break;
     }
-}
-
-/**
-* Output items for display
-*/
-function woocommerce_dymo_order_items_table( $order, $show_price = FALSE ) {
-	$return = '';
-	foreach($order->get_items() as $item) {
-		$_product = $order->get_product_from_item( $item );
-		$sku = $variation = '';
-		$sku = $_product->get_sku();
-		$item_meta = new WC_Order_Item_Meta( $item['item_meta'] );
-		$variation = '<br/><small>' . $item_meta->display( TRUE, TRUE ) . '</small>';
-		$return .= '<tr>
-		  <td style="text-align:left; padding: 3px;">' . $sku . '</td>
-			<td style="text-align:left; padding: 3px;">' . apply_filters('woocommerce_order_product_title', $item['name'], $_product) . $variation . '</td>
-			<td style="text-align:left; padding: 3px;">'.$item['qty'].'</td>';
-		if ($show_price) {
-			$return .= '<td style="text-align:left; padding: 3px;">';
-				if ( $order->display_cart_ex_tax || !$order->prices_include_tax ) :
-					$ex_tax_label = ( $order->prices_include_tax ) ? 1 : 0;
-					$return .= woocommerce_price( $order->get_line_subtotal( $item ), array('ex_tax_label' => $ex_tax_label ));
-				else :
-					$return .= woocommerce_price( $order->get_line_subtotal( $item, TRUE ) );
-				endif;
-			$return .= '
-			</td>';
-		}
-		$return .= '</tr>';
-	}
-	$return = apply_filters( 'woocommerce_dymo_order_items_table', $return );
-	return $return;
 }
 
 /**
@@ -205,21 +197,6 @@ function woocommerce_dymo_print_label() {
 	</ObjectInfo></DieCutLabel>';
 
 }
-function woocommerce_dymo_window_2() {
-	if (isset($_GET['print_dymo'])) {
-		$nonce = $_REQUEST['_wpnonce'];
-		global $woocommerce;
-  		if (!wp_verify_nonce($nonce, 'print-dymo') || !is_user_logged_in() ) die('You are not allowed to view this page.');
-		$order="";
-		$mypost=$_GET['post'];
-    	$orders = explode(',', $mypost);
-		$action = $_GET['type'];
-		/* here print flow*/
-		echo 'test';
-		exit();
-
-	}
-}
 function woocommerce_dymo_window() {
 	if (isset($_GET['print_dymo'])) {
 		$nonce = $_REQUEST['_wpnonce'];
@@ -246,7 +223,6 @@ function woocommerce_dymo_window() {
 <div id=error class=error><?php _e('Something went wrong while printing your label.', 'woocommerce-dymo');?> <?php _e('Please make sure your label contains the required object fields.', 'woocommerce-dymo');?> <?php echo sprintf(__('For more information about how to create your labels, see %s.', 'woocommerce-dymo'),'<a href="http://wordpress.geev.nl/support/documentation/" target=_blank">'.__('our documentation','woocommerce-dymo').'</a>');?></div>
 <script type="text/javascript">template = '<?php echo '<?xml version="1.0" encoding="utf-8"?>'; ?>' + '<?php echo preg_replace('/\s\s+/', '\' + \'', woocommerce_dymo_print_label()); ?>';</script>
 	<?php $actie=__('Shipping Label', 'woocommerce-dymo'); echo '<h1>'.sprintf( __('Print DYMO %s' , 'woocommerce-dymo') , $actie ).'</h1>'; 
-	
 	
 	$content = ob_get_clean();
 	$i=0;

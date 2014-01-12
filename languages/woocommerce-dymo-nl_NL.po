@@ -1,14 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Dymo\n"
-"POT-Creation-Date: 2013-11-27 17:29+0100\n"
-"PO-Revision-Date: 2013-11-27 17:30+0100\n"
+"POT-Creation-Date: 2014-01-12 14:23+0100\n"
+"PO-Revision-Date: 2014-01-12 14:23+0100\n"
 "Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: Geev vormgeeving <info@geev.nl>\n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.1\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
@@ -27,9 +28,11 @@ msgstr "Instellingen zijn opgeslagen."
 
 #: ../admin/dymo-settings.php:31
 msgid ""
-"Shipping is not active. Billing address is used instead of shipping address."
+"Shipping is not active. You can only use WooCommerce DYMO Print FREE with "
+"shipping addresses."
 msgstr ""
-"Verzending is niet actief. Het factuuradres wordt gebruikt ipv. verzendadres."
+"Verzending is niet actief. WooCommerce DYMO Print FREE werkt alleen met een "
+"verzendadres."
 
 #: ../admin/dymo-settings.php:40
 msgid "General Settings"
@@ -179,45 +182,53 @@ msgstr "Waardeer deze plugin met 5&#9733; op WordPress.org"
 msgid "Blog about it & link to the plugin page"
 msgstr "Schrijf een blog en link naar de plugin pagina"
 
-#: ../inc/dymo-funct.php:38
+#: ../inc/dymo-funct.php:43
+msgid ""
+"WooCommerce is not active. Please activate plugin before using WooCommerce "
+"DYMO Print plugin."
+msgstr ""
+"WooCommerce is niet actief. Activeer WooCommerce voordat je de WooCommerce "
+"DYMO Print plugin kunt gebruiken."
+
+#: ../inc/dymo-funct.php:50
 msgid "DYMO Print"
 msgstr "DYMO Print"
 
-#: ../inc/dymo-funct.php:42 ../inc/dymo-funct.php:253
+#: ../inc/dymo-funct.php:54 ../inc/dymo-funct.php:218
 msgid "Print DYMO labels"
 msgstr "Print DYMO labels"
 
-#: ../inc/dymo-funct.php:50 ../inc/dymo-funct.php:63
+#: ../inc/dymo-funct.php:62 ../inc/dymo-funct.php:75
 msgid "Print Shipping Label"
 msgstr "Verzend label"
 
-#: ../inc/dymo-funct.php:258
+#: ../inc/dymo-funct.php:223
 msgid "Something went wrong while printing your label."
 msgstr "Er ging iets verkeerd bij het printen van de label(s)."
 
-#: ../inc/dymo-funct.php:258
+#: ../inc/dymo-funct.php:223
 msgid "Please make sure your label contains the required object fields."
 msgstr "Zorg er a.u.b. voor dat het label alle verplichte velden bevat."
 
-#: ../inc/dymo-funct.php:258
+#: ../inc/dymo-funct.php:223
 #, php-format
 msgid "For more information about how to create your labels, see %s."
 msgstr "Voor meer informatie over het maken van je eigen labels, zie %s."
 
-#: ../inc/dymo-funct.php:258
+#: ../inc/dymo-funct.php:223
 msgid "our documentation"
 msgstr "onze documentatie"
 
-#: ../inc/dymo-funct.php:260
+#: ../inc/dymo-funct.php:225
 msgid "Shipping Label"
 msgstr "Verzend label"
 
-#: ../inc/dymo-funct.php:260
+#: ../inc/dymo-funct.php:225
 #, php-format
 msgid "Print DYMO %s"
 msgstr "Print DYMO %s"
 
-#: ../inc/dymo-funct.php:269
+#: ../inc/dymo-funct.php:233
 msgid "Printing label for order:"
 msgstr "Label voor bestelling:"
 
@@ -396,13 +407,6 @@ msgstr "Label voor bestelling:"
 #~ "If you are having problems with this plugin, please contact us via our "
 #~ msgstr ""
 #~ "Heb je problemen met deze plugin? Neem dan contact met ons op via onze"
-
-#~ msgid ""
-#~ "WooCommerce is not active. Please activate plugin before using "
-#~ "WooCommerce DYMO Print plugin."
-#~ msgstr ""
-#~ "WooCommerce is niet actief. Activeer WooCommerce voordat je de "
-#~ "WooCommerce DYMO Print plugin kunt gebruiken."
 
 #~ msgid ""
 #~ "An Unexpected HTTP Error occurred during the API request.</p> <p><a href="

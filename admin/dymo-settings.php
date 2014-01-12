@@ -28,7 +28,7 @@ function woocommerce_dymo_page() {
 	<div id="message" class="updated fade"><p><strong><?php _e( 'Your settings have been saved.', 'woocommerce-dymo' ); ?></strong></p></div>
 	<?php } 
 	if (( get_option( 'woocommerce_ship_to_billing_address_only' ) == 'yes' && get_option('woocommerce_require_shipping_address')=='no' )||  get_option('woocommerce_calc_shipping')=='no' ) {?>
-	<div id="message" class="error fade"><p><strong><?php _e( 'Shipping is not active. Billing address is used instead of shipping address.', 'woocommerce-dymo' ); ?></strong></p></div>
+	<div id="message" class="error fade"><p><strong><?php _e( 'Shipping is not active. You can only use WooCommerce DYMO Print FREE with shipping addresses.', 'woocommerce-dymo' ); ?></strong></p></div>
 	<?php }	?>
 	
 	<div id="content">
