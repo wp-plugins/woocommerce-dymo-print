@@ -83,8 +83,14 @@ function woocommerce_dymo_alter_order_actions($column) {
 * @since 1.1.1
 */
 function woo_dymo_convert_address($adres) {
+	/*$adres= preg_replace('/<br(\s+)?\/?>/i', "", preg_replace("/[\n\r]/","|",$adres));
+	return str_replace("'", "\'", htmlspecialchars_decode($adres,ENT_QUOTES)); */
+	
+	$adres= preg_replace('/<br\/(\s+)?\/?>/i', "|", preg_replace("/[\n\r]/","|",$adres));
 	$adres= preg_replace('/<br(\s+)?\/?>/i', "", preg_replace("/[\n\r]/","|",$adres));
-	return str_replace("'", "\'", htmlspecialchars_decode($adres,ENT_QUOTES)); 
+	$adres= str_replace("||","|",$adres);
+	$adres=rtrim(str_replace("'", "\'", htmlspecialchars_decode($adres,ENT_QUOTES)),"|");
+	return stripslashes($adres);
 }
 
 /**
