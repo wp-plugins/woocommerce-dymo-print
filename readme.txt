@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.geev.nl/product/woocommerce-dymo-print/
 Author URI: http://wordpress.geev.nl
 Tags: woocommerce, dymo
 Requires at least: 3.3
-Tested up to: 3.9.1
+Tested up to: 4.0-beta3
 Stable tag: 1.2.2
 License: GPLv2
 
@@ -16,6 +16,8 @@ The _WooCommerce Dymo Print plugin_ adds a quick connection with your DYMO label
 Now you are able to print shipping address labels in a second!
 
 For more information, check out [our website](http://wordpress.geev.nl/product/woocommerce-dymo-print/).
+
+This plugin is compatible with Wordpress 4.0-beta3 and WooCommerce 2.2.0-bleeding.
 
 **Free version**
 
