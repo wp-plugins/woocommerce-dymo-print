@@ -1,4 +1,4 @@
-<?php 
+<?php
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
@@ -94,30 +94,33 @@ function woocommerce_dymo_page() {
 						</div>
 					</div>
 				</div>
-				<div style="float:right; width:25%;">
+                <div style="float:right; width:25%;">
 					<div class="postbox">
-						<h3><?php _e( 'Buy Pro!', 'woocommerce-dymo' ); ?></h3>
-						<div class="inside dymo-preview">
-							<p><?php echo __( 'Check out our ', 'woocommerce-dymo' ); ?> <a href="http://wordpress.geev.nl/product/woocommerce-dymo-print/">website</a> <?php _e('to find out more about WooCommerce DYMO Print Pro.', 'woocommerce-dymo' );?></p>
-							<p><?php _e('For only &euro; 19,00 you will get a lot of features and access to our support section.', 'woocommerce-dymo' );?></p>
-							<p><?php _e('A couple of features:', 'woocommerce-dymo' );?>
-							<ul style="list-style:square;padding-left:20px;margin-top:-10px;"><li><?php _e('Print DYMO billing & shipping labels', 'woocommerce-dymo' );?></li><li><?php _e('Customize your own labels', 'woocommerce-dymo' );?></li><li><?php _e('Choose your label size', 'woocommerce-dymo' );?></li><li><?php _e('Print your company logo on your labels', 'woocommerce-dymo' );?></li><li><?php _e('Use a DYMO Labelwriter 450 Twin Turbo', 'woocommerce-dymo' );?></li><li><?php _e('Bulk printing', 'woocommerce-dymo' );?></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Print Product list', 'woocommerce-dymo' );?></strong></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Print Order number', 'woocommerce-dymo' );?></strong></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Use a different label markup for shipping and invoice labels.', 'woocommerce-dymo' );?></strong></li></ul>
+						<h3><?php _e( 'Buy Pro!', 'woocommerce-umf' ); ?></h3>
+						<div class="inside umf-preview">
+							<p><?php echo __( 'Check out our ', 'woocommerce-dymo' ); ?> <a href="https://wpfortune.com/shop/plugins/woocommerce-dymo-print/">website</a> <?php _e('to find out more about WooCommerce DYMO Print Pro.', 'woocommerce-dymo' );?></p>
+							<p><?php _e('For only &euro; 25,00 you will get a lot of features and access to our support section.', 'woocommerce-dymo' );?></p>
+							<p><?php _e('A couple of features:', 'woocommerce-dymo' );?></p>
+
+                            <ul style="list-style:square;padding-left:20px;margin-top:-10px;"><li><?php _e('Print DYMO billing & shipping labels', 'woocommerce-dymo' );?></li><li><?php _e('Customize your own labels', 'woocommerce-dymo' );?></li><li><?php _e('Choose your label size', 'woocommerce-dymo' );?></li><li><?php _e('Print your company logo on your labels', 'woocommerce-dymo' );?></li><li><?php _e('Use a DYMO Labelwriter 450 Twin Turbo', 'woocommerce-dymo' );?></li><li><?php _e('Bulk printing', 'woocommerce-dymo' );?></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Print Product list', 'woocommerce-dymo' );?></strong></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Print Order number', 'woocommerce-dymo' );?></strong></li><li><strong><?php _e('New:', 'woocommerce-dymo' );?> <?php _e('Use a different label markup for shipping and invoice labels.', 'woocommerce-dymo' );?></strong></li></ul>
+
 						</div>
 					</div>
 					<div class="postbox">
-						<h3><?php _e( 'Show Your Love', 'woocommerce-dymo' ); ?></h3>
-						<div class="inside dymo-preview">
-							<p><?php echo sprintf(__( 'This plugin is developed by %s, a Dutch graphic design and webdevelopment company.', 'woocommerce-dymo' ),'Geev vormgeeving'); ?></p>
-							<p><?php _e( 'If you are happy with this plugin please show your love by liking us on Facebook', 'woocommerce-dymo' ); ?></p>
+						<h3><?php _e( 'Show Your Love', 'woocommerce-umf' ); ?></h3>
+						<div class="inside umf-preview">
+							<p><?php echo sprintf(__( 'This plugin is developed by %s, a Dutch graphic design and webdevelopment company.', 'woocommerce-umf' ),'Geev vormgeeving'); ?></p>
+							<p><?php _e( 'If you are happy with this plugin please show your love by liking us on Facebook', 'woocommerce-umf' ); ?></p>
 							<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fgeevvormgeeving&amp;width=220&amp;height=62&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:62px;" allowTransparency="true"></iframe>
-							<p><?php _e( 'Or', 'woocommerce-dymo' ); ?></p>
+							<p><?php _e( 'Or', 'woocommerce-umf' ); ?></p>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;">
-								<li><a href="http://wordpress.org/extend/plugins/woocommerce-dymo-print/" target=_blank title="Woocommerce DYMO print"><?php _e( 'Rate the plugin 5&#9733; on WordPress.org', 'woocommerce-dymo' ); ?></a></li>
-								<li><a href="http://wordpress.geev.nl/product/woocommerce-dymo-print/" target=_blank title="Woocommerce DYMO print"><?php _e( 'Blog about it & link to the plugin page', 'woocommerce-dymo' ); ?></a></li>
+								<li><a href="http://wordpress.org/extend/plugins/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Rate the plugin 5&#9733; on WordPress.org', 'woocommerce-umf' ); ?></a></li>
+								<li><a href="http://wordpress.geev.nl/product/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Blog about it & link to the plugin page', 'woocommerce-umf' ); ?></a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</form>
 	</div>
