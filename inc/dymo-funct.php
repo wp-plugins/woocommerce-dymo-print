@@ -256,7 +256,7 @@ function woocommerce_dymo_window() {
 			printParams.twinTurboRoll = dymo.label.framework.TwinTurboRoll.Auto; // or Left or Right 
 		} 
     }
-		<?php $adres=woo_dymo_convert_address($adres);?>
+		<?php $adres=html_entity_decode($adres,ENT_COMPAT,'UTF-8'); $adres=woo_dymo_convert_address($adres);?>
 		var adres_in = '<?php echo $adres;?>';
 		var adres= adres_in.replace(/\|/g, "\n");
 		<?php if(woocommerce_dymo_print_company_name()!="") { ?> label.setObjectText("COMPANY", "<?php echo woocommerce_dymo_print_company_name(); ?>"); <?php } ?>
