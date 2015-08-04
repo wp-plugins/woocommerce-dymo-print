@@ -4,8 +4,8 @@ Plugin URI: https://wpfortune.com/shop/plugins/woocommerce-dymo-print/
 Author URI: https://wpfortune.com/shop/plugins/woocommerce-dymo-print/
 Tags: woocommerce, dymo
 Requires at least: 3.3
-Tested up to: 4.2-alpha
-Stable tag: 1.2.4
+Tested up to: 4.2.3.
+Stable tag: 1.2.5
 License: GPLv2
 
 This plugin adds the possibility to print shipping addresses on your DYMO label printer.
@@ -15,13 +15,13 @@ This plugin adds the possibility to print shipping addresses on your DYMO label 
 The _WooCommerce Dymo Print plugin_ adds a quick connection with your DYMO labelwriter within your WooCommerce shop.
 Now you are able to print shipping address labels in a second!
 
-For more information, check out [our website](http://wordpress.geev.nl/product/woocommerce-dymo-print/).
+For more information, check out [our website](https://wpfortune.com/shop/plugins/woocommerce-dymo-print/).
 
 This plugin is compatible with Wordpress 4.2 and WooCommerce 2.3.x.
 
 **Free version**
 
-This free version may be used as is. If you want more options and support you can buy WooCommerce DYMO Print Pro for only &euro; 19,00.
+This free version may be used as is. If you want more options and support you can buy WooCommerce DYMO Print Pro for only &euro; 25,00.
 The plugin adds a new side panel on the order page to allow shop managers to print out DYMO labels on the fly. This is useful for a lot of shops and makes live a lot easier ;-) .
 
 **DYMO and Windows 8.1**
@@ -33,7 +33,7 @@ In some situations WooCommerce DYMO Print is not working on Windows 8.1. This de
 * Print DYMO shipping labels in a second
 * Localisation: English & Dutch
 
-**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 4.1).**
+**WooCommerce DYMO Print is fully compatible with WooCommerce 2.0 and above and Wordpress 3.1 and above (tested on 4.2.3).**
 
 Rate us on http://wordpress.org/plugins/woocommerce-dymo-print/ and receive 20% discount on our PRO version. Just contact us after you've placed your rating & review.
 
@@ -56,6 +56,9 @@ Go to WooCommerce > DYMO print, configure and start printing. Simple!
 
 == Changelog ==
 ***WooCommerce DYMO Print***
+= 2015.08.04 - version 1.2.4 =
+* Several bug fixes
+
 = 2015.03.05 - version 1.2.3 =
 * Fix problem with special characters in some states
 
@@ -137,11 +140,11 @@ In some situations WooCommerce DYMO Print is not working on Windows 8.1. This is
 
 = WooCommerce DYMO Print and Internet Explorer 11 =
 If your DYMO printer is not printing you probably get a messages "No Dymo Printers installed". 
-Please follow instructions on (http://wordpress.geev.nl/support/documentation/woocommerce-dymo-print-plugin-documentation/woocommerce-dymo-print-internet-explorer/).
+Please follow instructions on (https://support.wpfortune.com/hc/en-us/articles/202988362-Help-WooCommerce-DYMO-Print-doesn-t-print-at-all-).
 
 = Message "No DYMO Printers installed" but I am sure it is! =
 If your DYMO printer is not printing you probably get a messages "No Dymo Printers installed". 
-Please follow instructions on (http://wordpress.geev.nl/support/documentation/woocommerce-dymo-print-plugin-documentation/woocommerce-dymo-print-internet-explorer/).
+Please follow instructions on (https://support.wpfortune.com/hc/en-us/articles/202988362-Help-WooCommerce-DYMO-Print-doesn-t-print-at-all-).
 
 = Does this plugin support a DYMO labelwriter connected to an Apple? = 
 We really can't give an answer about that. Some people say it does, some other say it doesn't. We really can't figure out where the problems are, so just try it out yourself. It's free!
@@ -151,16 +154,16 @@ With our PRO version it is possible to design your own labels. Just select a bar
 
 = What is the difference between the Free and Pro versions of this plugin? = 
 You may use the free version as it is. When you buy WooCommerce DYMO Print PRO you get a lot more options: print billing & shipping labels, customize your own labels, bulk print labels, choose your label size, print your company logo on your labels, use a DYMO Labelwriter 450 Twin Turbo.
-For a full list of features, please check out [our website](http://wordpress.geev.nl/product/woocommerce-dymo-print/).
+For a full list of features, please check out [our website](https://wpfortune.com/shop/plugins/woocommerce-dymo-print/).
 
 = Where can I find more information about this plugin? =
-You can find more information on [our website](http://wordpress.geev.nl/product/woocommerce-dymo-print/).
+You can find more information on [our website](https://wpfortune.com/shop/plugins/woocommerce-dymo-print/).
 
 = Which DYMO labelwriters can I use? = 
-You can use a Labelwriter 400 or Labelwriter 450 (Turbo). If you wan't to use a DYMO Labelwriter 450 Twin Turbo, you could buy our PRO version.
+You can use a Labelwriter 400 or Labelwriter 450 (Turbo). If you wan't to use a DYMO Labelwriter 450 Twin Turbo and use both rolls, you could buy our PRO version.
 
 = Which labels are supported? = 
 The free version only supports basic DYMO address labels (89x36mm - #99012). With the PRO version you could choose your own markup and labelsize. 
 
 = Why is there a PRO version? = 
-We want to give everyone the opportunity to use and try our plugins, but if you want to get more options and access to our support section you can buy our PRO version. WooCommerce DYMO Print Pro costs only **&euro; 19,00**.
+We want to give everyone the opportunity to use and try our plugins, but if you want to get more options and access to our support section you can buy our PRO version. WooCommerce DYMO Print Pro costs only **&euro; 25,00**.

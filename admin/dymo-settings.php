@@ -106,19 +106,6 @@ function woocommerce_dymo_page() {
 
 						</div>
 					</div>
-					<div class="postbox">
-						<h3><?php _e( 'Show Your Love', 'woocommerce-umf' ); ?></h3>
-						<div class="inside umf-preview">
-							<p><?php echo sprintf(__( 'This plugin is developed by %s, a Dutch graphic design and webdevelopment company.', 'woocommerce-umf' ),'Geev vormgeeving'); ?></p>
-							<p><?php _e( 'If you are happy with this plugin please show your love by liking us on Facebook', 'woocommerce-umf' ); ?></p>
-							<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fgeevvormgeeving&amp;width=220&amp;height=62&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:62px;" allowTransparency="true"></iframe>
-							<p><?php _e( 'Or', 'woocommerce-umf' ); ?></p>
-							<ul style="list-style:square;padding-left:20px;margin-top:-10px;">
-								<li><a href="http://wordpress.org/extend/plugins/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Rate the plugin 5&#9733; on WordPress.org', 'woocommerce-umf' ); ?></a></li>
-								<li><a href="http://wordpress.geev.nl/product/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Blog about it & link to the plugin page', 'woocommerce-umf' ); ?></a></li>
-							</ul>
-						</div>
-					</div>
 				</div>
 
 			</div>

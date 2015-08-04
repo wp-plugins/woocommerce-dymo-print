@@ -3,11 +3,11 @@
 Plugin Name: WooCommerce DYMO Print
 Plugin URI: https://wpfortune.com/shop/plugins/woocommerce-dymo-print/
 Description: This plugin provides shipping labels for your DYMO label printer from the backend. - Free version
-Version: 1.2.4
-Author: Bart Pluijms
+Version: 1.2.5
+Author: bpluijms, wpfortune
 Author URI: https://wpfortune.com/
 */
-/*  Copyright 2012  Geev  (email : info@geev.nl)
+/*  Copyright 2012  WP Fortune  (email : info@wpfortune.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -42,7 +42,7 @@ add_action('admin_notices', 'showDymoAdminMessages');
 */
 function dymo_plugin_links($links) { 
   $settings_link = '<a href="admin.php?page=woocommerce_dymo">Settings</a>'; 
-  $premium_link = '<a href="http://wordpress.geev.nl/product/woocommerce-dymo-print/" title="Buy Pro" target=_blank>Buy Pro</a>'; 
+  $premium_link = '<a href="https://wpfortune.com/shop/plugins/woocommerce-dymo-print/" title="Buy Pro" target=_blank>Buy Pro</a>'; 
   array_unshift($links, $settings_link,$premium_link); 
   return $links; 
 }
