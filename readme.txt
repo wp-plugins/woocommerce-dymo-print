@@ -4,7 +4,7 @@ Plugin URI: https://wpfortune.com/shop/plugins/woocommerce-dymo-print/
 Author URI: https://wpfortune.com/shop/plugins/woocommerce-dymo-print/
 Tags: woocommerce, dymo
 Requires at least: 3.3
-Tested up to: 4.2.3.
+Tested up to: 4.3
 Stable tag: 1.2.5
 License: GPLv2
 
@@ -17,7 +17,7 @@ Now you are able to print shipping address labels in a second!
 
 For more information, check out [our website](https://wpfortune.com/shop/plugins/woocommerce-dymo-print/).
 
-This plugin is compatible with Wordpress 4.2 and WooCommerce 2.3.x.
+This plugin is compatible with Wordpress 4.3 and WooCommerce 2.3.x.
 
 **Free version**
 
